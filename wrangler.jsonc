@@ -1,0 +1,12 @@
+{
+  "name": "lacrimosica",
+  "compatibility_date": "2026-11-01",
+  // Static site: no Worker script, Cloudflare serves the files directly.
+  // Which files get uploaded is controlled by .assetsignore (an allowlist).
+  "assets": { "directory": "." },
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "lacrimosica.com", "custom_domain": true },
+    { "pattern": "www.lacrimosica.com", "custom_domain": true }
+  ]
+}

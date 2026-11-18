@@ -1,0 +1,10 @@
+# Allowlist: ignore everything at the top level, then re-include the site.
+# Anything not listed here (tests, docs, resume, config) is never uploaded.
+/*
+!/index.html
+!/styles.css
+!/main.js
+!/favicon.svg
+!/assets/
+!/js/
+.DS_Store

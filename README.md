@@ -12,13 +12,17 @@ python3 -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
-## Deploy with Cloudflare Pages
+## Deploy
 
-1. Import this GitHub repository in Cloudflare Pages.
-2. Select **None** as the framework preset.
-3. Leave the build command empty and set the build output directory to `/`.
-4. After the first deployment, add `lacrimosica.com` under **Custom domains** in the Pages project.
-5. Follow Cloudflare's DNS prompts and optionally add `www.lacrimosica.com` as a redirect.
+The site runs on Cloudflare Workers as static assets (no Worker script) and is served at `lacrimosica.com` and `www.lacrimosica.com`. From the repo root:
+
+```sh
+wrangler login   # once
+wrangler deploy
+```
+
+- `wrangler.jsonc` sets the Worker name and the two custom domains.
+- `.assetsignore` is an allowlist: only `index.html`, `styles.css`, `main.js`, `favicon.svg`, `assets/` and `js/` are uploaded. If you add a new top-level file or folder that the site needs, add a `!/name` line there or it won't be deployed.
 
 The site is plain HTML, CSS and ES modules; no build step or dependencies are required.
 
