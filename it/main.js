@@ -3,6 +3,7 @@ import {
   createCycle,
   targetsFor,
 } from "./js/cycle.js";
+import { preserveLanguageScroll } from "/js/language-scroll.js";
 import { createFluidSim } from "./js/fluid-sim.js";
 import { createLiquidLayer } from "./js/liquid-layer.js";
 import { readPalette } from "./js/palette.js";
@@ -10,12 +11,12 @@ import { createParticleLayer } from "./js/particle-layer.js";
 import { createPhaseGeometry } from "./js/phase-geometry.js";
 
 document.getElementById("year").textContent = new Date().getFullYear();
+preserveLanguageScroll();
 
 const split = document.querySelector(".identity-split");
 const panels = Array.from(split.querySelectorAll(".identity-panel"));
 const announce = document.getElementById("equilibrium-announce");
 const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
-const coarsePointer = window.matchMedia("(hover: none), (pointer: coarse)");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const narrow = window.matchMedia("(max-width: 700px)");
 
@@ -159,10 +160,10 @@ function startFluidHero() {
   return true;
 }
 
-// Unconfirmed guess for the iPhone bug (TICKETS.md T1): phones keep the SVG
-// fallback, while tablets and desktops still get the WebGL hero. Check the
-// iPhone in Safari Web Inspector before treating this as the fix.
-if (!(coarsePointer.matches && narrow.matches) && !reducedMotion.matches) startFluidHero();
+// Phones get the same fluid hero as desktop (the layout turns vertical on
+// narrow screens). The SVG wave stays as the fallback when WebGL is missing
+// and under reduced motion.
+if (!reducedMotion.matches) startFluidHero();
 
 /* ---------- Custom cursor ----------
  * Each part of the page declares its cursor zone in markup with data-cursor

@@ -11,9 +11,20 @@ if (header) start(header);
 
 function start(header) {
   const links = Array.from(header.querySelectorAll('nav a[href^="#"]'));
-  const sections = links
-    .map((link) => ({ link, section: document.getElementById(link.getAttribute("href").slice(1)) }))
-    .filter((item) => item.section);
+  // Keep the primary navigation short. "About" is the umbrella for the
+  // reflective sequence that follows the work history: the story, the
+  // Le Châtelier lab, and the manifesto. It should stay current across all
+  // three instead of losing its underline in the middle of the page.
+  const sectionGroups = links
+    .map((link) => {
+      const id = link.getAttribute("href").slice(1);
+      const ids = id === "story" ? ["story", "le-chatelier", "manifesto"] : [id];
+      return {
+        link,
+        sections: ids.map((sectionId) => document.getElementById(sectionId)).filter(Boolean),
+      };
+    })
+    .filter(({ sections }) => sections.length);
 
   const bar = document.createElement("div");
   bar.className = "nav-progress";
@@ -29,15 +40,18 @@ function start(header) {
     bar.style.transform = `scaleX(${scrollShare()})`;
   }
 
-  // The link whose section spans the reading line is current. Sections that
-  // have no link in the header (the lab, manifesto, contact) clear the mark.
+  // The link whose section spans the reading line is current. Grouped
+  // sections inherit the current state of their umbrella navigation link;
+  // standalone sections with no link clear the mark.
   function markCurrent() {
     const line = window.innerHeight * READ_LINE;
-    const current = sections.find(({ section }) => {
-      const rect = section.getBoundingClientRect();
-      return rect.top <= line && rect.bottom > line;
+    const current = sectionGroups.find(({ sections }) => {
+      return sections.some((section) => {
+        const rect = section.getBoundingClientRect();
+        return rect.top <= line && rect.bottom > line;
+      });
     });
-    sections.forEach(({ link }) => {
+    sectionGroups.forEach(({ link }) => {
       if (link === current?.link) link.setAttribute("aria-current", "true");
       else link.removeAttribute("aria-current");
     });

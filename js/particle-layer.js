@@ -21,7 +21,13 @@ export function createParticleLayer(canvas, { geometry, palette }) {
 
   function seed() {
     const { width, height } = geometry;
-    const count = Math.max(320, Math.min(1500, Math.round((width * height) / 1100)));
+    // A phone has fewer pixels and less GPU headroom than a desktop. Keep
+    // enough particles for the effect to read, but avoid turning every
+    // animation frame into a large 2D-canvas redraw on mobile Safari.
+    const compact = width < 700;
+    const count = compact
+      ? Math.max(140, Math.min(320, Math.round((width * height) / 1800)))
+      : Math.max(320, Math.min(1500, Math.round((width * height) / 1100)));
     particles = Array.from({ length: count }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
@@ -73,14 +79,18 @@ export function createParticleLayer(canvas, { geometry, palette }) {
         p.vy += (targetY - p.vy) * ease;
 
         // The pointer field: a swirl, a gentle push, and a stir from its motion.
-        const dx = p.x - pointer.x;
-        const dy = p.y - pointer.y;
+        // The simulation deliberately has an idle wandering pointer when no
+        // real pointer is present. The particle layer receives null in that
+        // state, so the pointer field must be optional too.
+        const dx = p.x - (pointer?.x ?? 0);
+        const dy = p.y - (pointer?.y ?? 0);
         const r = Math.hypot(dx, dy);
-        p.near = r < POINTER_RADIUS * 0.6 && pointer.strength > 0.6;
+        const pointerStrength = pointer?.strength ?? 0;
+        p.near = r < POINTER_RADIUS * 0.6 && pointerStrength > 0.6;
         if (r < POINTER_RADIUS && r > 0.5) {
-          const f = (1 - r / POINTER_RADIUS) ** 2 * pointer.strength;
-          p.vx += ((-dy / r) * 950 + (dx / r) * 520 + pointer.vx * 5) * f * dt;
-          p.vy += ((dx / r) * 950 + (dy / r) * 520 + pointer.vy * 5) * f * dt;
+          const f = (1 - r / POINTER_RADIUS) ** 2 * pointerStrength;
+          p.vx += ((-dy / r) * 950 + (dx / r) * 520 + (pointer?.vx ?? 0) * 5) * f * dt;
+          p.vy += ((dx / r) * 950 + (dy / r) * 520 + (pointer?.vy ?? 0) * 5) * f * dt;
         }
 
         p.x += p.vx * dt;
