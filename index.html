@@ -25,7 +25,11 @@
   <body>
     <header class="site-header">
       <a class="wordmark" href="#top" aria-label="Mômô Goudarzi, home">mg<span>.</span></a>
-      <nav aria-label="Main navigation">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" aria-label="Main navigation">
         <a href="#intro">Two sides</a>
         <a href="#work">Projects</a>
         <a class="nav-optional" href="#experience">Experience</a>
@@ -94,9 +98,9 @@
         </div>
         <div class="project-list">
           <article class="project">
-            <span class="project-number">01</span>
+            <span class="project-number">03</span>
             <div class="project-main">
-              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/niki" target="_blank" rel="noreferrer">Niki</a> <span class="project-tag">Work in progress</span></h3>
+              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/niki" target="_blank" rel="noreferrer">Niki</a><span class="project-tags"><span class="visually-hidden"> — </span><span class="project-tag">Work in progress</span></span></h3>
               <p class="project-description">A multi-tenant platform for the administration of Italian nonprofits. It manages members, volunteers, board terms, assemblies and Third Sector compliance.</p>
               <a class="project-extra" href="https://niki-demo.lacrimosica.com" target="_blank" rel="noreferrer">Live demo <span aria-hidden="true">↗</span></a>
             </div>
@@ -104,9 +108,9 @@
             <span class="project-arrow" aria-hidden="true">↗</span>
           </article>
           <article class="project">
-            <span class="project-number">02</span>
+            <span class="project-number">04</span>
             <div class="project-main">
-              <h3 class="project-title">Dossier <span class="project-tag">My fork</span> <span class="project-tag">Work in progress</span></h3>
+              <h3 class="project-title">Dossier <span class="project-tags"><span class="visually-hidden"> — </span><span class="project-tag">My fork</span><span class="project-tag">Work in progress</span></span></h3>
               <p class="project-description">My fork of an open-source, self-hosted resume builder. I added a refine chat that tailors one application, a flow that sends new facts back to the profile, visual theme settings and server backups. I built it with AI coding tools.</p>
               <a class="project-extra" href="https://github.com/AienTech/dossier" target="_blank" rel="noreferrer">Original project <span aria-hidden="true">↗</span></a>
             </div>
@@ -114,27 +118,27 @@
             <span class="project-arrow" aria-hidden="true">↗</span>
           </article>
           <article class="project">
-            <span class="project-number">03</span>
+            <span class="project-number">05</span>
             <div class="project-main">
-              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/emo" target="_blank" rel="noreferrer">Emo</a> <span class="project-tag">Work in progress</span></h3>
+              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/emo" target="_blank" rel="noreferrer">Emo</a><span class="project-tags"><span class="visually-hidden"> — </span><span class="project-tag">Work in progress</span></span></h3>
               <p class="project-description">“E mo’?” is Italian for “and now (what)?”. Emo answers it: a native planner for Mac, iPhone and iPad that fits your tasks around your fixed commitments and around how much energy you have that day.</p>
             </div>
             <span class="project-stack">SwiftUI · SwiftData · Foundation Models</span>
             <span class="project-arrow" aria-hidden="true">↗</span>
           </article>
           <article class="project" id="lexicon">
-            <span class="project-number">04</span>
+            <span class="project-number">06</span>
             <div class="project-main">
-              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/lexicon" target="_blank" rel="noreferrer">Lexicon</a> <span class="project-tag">Work in progress</span></h3>
+              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/lexicon" target="_blank" rel="noreferrer">Lexicon</a><span class="project-tags"><span class="visually-hidden"> — </span><span class="project-tag">Work in progress</span></span></h3>
               <p class="project-description">I like learning a little of every language, so I’m building my own study tool. Paste a real text, a local LLM explains the words you don’t know, and you review them later with spaced repetition. Something to study with, not a course or a game.</p>
             </div>
             <span class="project-stack">React · Dexie · Ollama</span>
             <span class="project-arrow" aria-hidden="true">↗</span>
           </article>
           <article class="project">
-            <span class="project-number">05</span>
+            <span class="project-number">07</span>
             <div class="project-main">
-              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/social-media-domains-reference-list" target="_blank" rel="noreferrer">Social media blocklist</a> <span class="project-tag">Work in progress</span></h3>
+              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/social-media-domains-reference-list" target="_blank" rel="noreferrer">Social media blocklist</a><span class="project-tags"><span class="visually-hidden"> — </span><span class="project-tag">Work in progress</span></span></h3>
               <p class="project-description">A hosts-format list of social media and messaging domains, for Pi-hole and other DNS filters. The hard part is keeping it current: a platform like YouTube runs on thousands of domains, and they keep changing. Next, I want to find them automatically.</p>
             </div>
             <span class="project-stack">Shell · Pi-hole</span>
@@ -154,7 +158,7 @@
         <div class="experience-columns">
           <div class="experience-column experience-column--technology">
             <h3 class="experience-phrase">Shaping code.</h3>
-            <h3 class="experience-kicker">01 / Software and Tech</h3>
+            <h3 class="experience-kicker">08 / Software and Tech</h3>
             <ol class="experience-list">
               <li class="experience-item">
                 <div class="experience-head">
@@ -184,7 +188,7 @@
 
           <div class="experience-column experience-column--community">
             <h3 class="experience-phrase">Shaping communities.</h3>
-            <h3 class="experience-kicker">02 / People &amp; operations</h3>
+            <h3 class="experience-kicker">09 / People &amp; operations</h3>
             <ol class="experience-list">
               <li class="experience-item">
                 <div class="experience-head">
@@ -506,7 +510,7 @@
       </section>
 
       <section class="manifesto section" id="manifesto" aria-labelledby="manifesto-title">
-        <p class="manifesto-kicker"><span>06</span> Ideas · how they grow</p>
+        <p class="manifesto-kicker"> Ideas · how they grow</p>
         <h2 class="manifesto-title" id="manifesto-title">A new idea arrives.</h2>
         <ol class="manifesto-path">
           <li class="milestone">
@@ -585,6 +589,7 @@
     <script type="module" src="/js/rotator.js"></script>
     <script type="module" src="/js/manifesto-path.js"></script>
     <script type="module" src="/js/nav-progress.js"></script>
+    <script type="module" src="/js/nav-menu.js"></script>
     <script type="module" src="/js/icebreaker.js"></script>
   </body>
 </html>

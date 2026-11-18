@@ -1,6 +1,10 @@
 const STORAGE_KEY = "language-scroll-state";
 
 export function preserveLanguageScroll(win = window, doc = document) {
+  // The browser otherwise restores a cross-document navigation at the top,
+  // then our delayed correction visibly jumps to the saved position.
+  if (win.history) win.history.scrollRestoration = "manual";
+
   for (const link of doc.querySelectorAll(".nav-language")) {
     link.addEventListener("click", (event) => {
       if (
@@ -51,12 +55,23 @@ export function preserveLanguageScroll(win = window, doc = document) {
   }
 
   const restore = () => {
+    // The site uses smooth scrolling globally. Temporarily opt out so this
+    // restoration is a single synchronous reposition, not an animation.
+    const previousBehavior = doc.documentElement.style.scrollBehavior;
+    doc.documentElement.style.scrollBehavior = "auto";
     win.scrollTo({ top: state.scrollY, behavior: "instant" });
+    doc.documentElement.style.scrollBehavior = previousBehavior;
   };
 
-  if (doc.readyState === "complete") {
-    win.requestAnimationFrame(restore);
-  } else {
-    win.addEventListener("load", () => win.requestAnimationFrame(restore), { once: true });
+  // Run before the first paint. If the document was not fully laid out yet,
+  // only correct again when the browser actually clamped the requested value.
+  restore();
+
+  if (doc.readyState !== "complete") {
+    win.addEventListener("load", () => {
+      win.requestAnimationFrame(() => {
+        if (Math.abs(win.scrollY - state.scrollY) > 1) restore();
+      });
+    }, { once: true });
   }
 }
