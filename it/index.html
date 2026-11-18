@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4ee">
+    <meta
+      name="description"
+      content="Ingegnere backend e cloud a Torino, con esperienza su sistemi in produzione e funzionalità basate su LLM. Dal 2022 collaboro alla gestione di un'associazione di volontariato."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mômô Goudarzi — Ingegnere software e organizzazione del Terzo Settore">
+    <meta
+      property="og:description"
+      content="Backend e cloud: sistemi distribuiti, Kubernetes, RAG e agenti in produzione. Dal 2022, attività organizzativa in un'associazione torinese."
+    >
+    <meta property="og:url" content="https://lacrimosica.com/it/">
+    <link rel="alternate" hreflang="en" href="https://lacrimosica.com/">
+    <link rel="alternate" hreflang="it" href="https://lacrimosica.com/it/">
+    <title>Mômô Goudarzi — Ingegnere software e organizzazione del Terzo Settore</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="prefetch" href="/" as="document">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Mômô Goudarzi, pagina iniziale">mg<span>.</span></a>
+      <nav aria-label="Navigazione principale">
+        <a href="#intro">Due lati</a>
+        <a href="#work">Progetti</a>
+        <a class="nav-optional" href="#experience">Esperienza</a>
+        <a href="#story">Chi sono</a>
+        <a class="nav-contact" href="mailto:lacrimosica@pm.me">Scrivimi <span aria-hidden="true">↗</span></a>
+        <a class="nav-language" href="/" hreflang="en" aria-label="Leggi in inglese">EN</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="identity-stage" id="intro" aria-labelledby="identity-title">
+        <h1 class="visually-hidden" id="identity-title">
+          Mômô Goudarzi: tecnologia e organizzazione delle comunità
+        </h1>
+        <div class="identity-split" data-active="equilibrium" data-stage="equilibrium" data-cursor="phase">
+          <svg class="wave-division" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true">
+            <path class="wave-phase-desktop" d="M535 0 C455 150 605 270 520 430 C435 600 600 760 500 1000 H1000 V0 Z"/>
+            <path class="wave-phase-mobile" d="M0 490 C140 430 285 565 430 500 C610 420 760 565 1000 485 V1000 H0 Z"/>
+            <path class="wave-ripple wave-ripple--desktop" d="M535 0 C455 150 605 270 520 430 C435 600 600 760 500 1000"/>
+            <path class="wave-ripple wave-ripple--mobile" d="M0 490 C140 430 285 565 430 500 C610 420 760 565 1000 485"/>
+          </svg>
+          <button
+            class="identity-panel identity-panel--technology"
+            type="button"
+            data-side="technology"
+            aria-pressed="false"
+          >
+            <span class="identity-kicker">01 / Software e tecnologia</span>
+            <span class="identity-title">
+              <span class="visually-hidden">Costruisco affidabilità, chiarezza e resilienza nelle tecnologie.</span>
+              <span aria-hidden="true"><span class="identity-title-line">Costruisco <span class="identity-concept-rotator" data-suffix="" data-subjects="affidabilità|chiarezza|resilienza">affidabilità</span></span><br>nelle tecnologie.</span>
+            </span>
+            <span class="identity-summary">Sistemi backend e cloud, e funzionalità di IA dove servono davvero.</span>
+            <span class="identity-reveal">
+              <span class="reveal-copy">Ultimamente ho curato backend e cloud di una piattaforma di agenti IA: recupero delle informazioni, strumenti degli agenti, sessioni e processi in background tra i servizi.</span>
+            </span>
+            <span class="identity-hint">Tocca, seleziona o passa sopra per saperne di più <span aria-hidden="true">↘</span></span>
+          </button>
+
+          <button
+            class="identity-panel identity-panel--community"
+            type="button"
+            data-side="community"
+            aria-pressed="false"
+          >
+            <span class="identity-kicker">02 / Persone e organizzazione</span>
+            <span class="identity-title">
+              <span class="visually-hidden">Costruisco appartenenza, autonomia e uno scopo condiviso nelle comunità.</span>
+              <span aria-hidden="true"><span class="identity-title-line">Costruisco <span class="identity-concept-rotator identity-concept-rotator--people" data-suffix="" data-subjects="appartenenza|autonomia|uno scopo condiviso">appartenenza</span></span><br>nelle comunità.</span>
+            </span>
+            <span class="identity-summary">Il lato poco appariscente dei gruppi: ruoli, strumenti, risorse e passaggi di consegne, perché il lavoro non ricada su una sola persona.</span>
+            <span class="identity-reveal">
+              <span class="reveal-copy">In un'associazione gratuita di supporto tra pari ho costruito gli strumenti interni e una rete di riferimento con altre realtà locali.</span>
+            </span>
+            <span class="identity-hint">Tocca, seleziona o passa sopra per saperne di più <span aria-hidden="true">↙</span></span>
+          </button>
+
+          <p class="visually-hidden" id="equilibrium-announce" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="work section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="eyebrow">Progetti selezionati</p>
+          <h2 id="work-title">Nata come cosa mia, poi diventata qualcosa che <em>possiamo</em> usare.</h2>
+        </div>
+        <div class="project-list">
+          <article class="project">
+            <span class="project-number">01</span>
+            <div class="project-main">
+              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/niki" target="_blank" rel="noreferrer">Niki</a> <span class="project-tag">In lavorazione</span></h3>
+              <p class="project-description">Una piattaforma multi-ente per la gestione di associazioni italiane. Amministra soci, volontari, mandati degli organi, assemblee e adempimenti del Terzo Settore.</p>
+              <a class="project-extra" href="https://niki-demo.lacrimosica.com" target="_blank" rel="noreferrer">Demo live <span aria-hidden="true">↗</span></a>
+            </div>
+            <span class="project-stack">React · Hono · Workers · D1</span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="project">
+            <span class="project-number">02</span>
+            <div class="project-main">
+              <h3 class="project-title">Dossier <span class="project-tag">My fork</span> <span class="project-tag">In lavorazione</span></h3>
+              <p class="project-description">Il mio fork di un generatore di CV open source e self-hosted. Ho aggiunto una chat di rifinitura che adatta una candidatura, un flusso che rimanda i nuovi dati al profilo, impostazioni visive e backup del server. Lo sviluppo è stato aiutato da strumenti di coding IA.</p>
+              <a class="project-extra" href="https://github.com/AienTech/dossier" target="_blank" rel="noreferrer">Progetto originale <span aria-hidden="true">↗</span></a>
+            </div>
+            <span class="project-stack">Next.js · PostgreSQL · MCP · Ollama</span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="project">
+            <span class="project-number">03</span>
+            <div class="project-main">
+              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/emo" target="_blank" rel="noreferrer">Emo</a> <span class="project-tag">In lavorazione</span></h3>
+              <p class="project-description">“E mo’?” è la domanda a cui Emo risponde: un planner nativo per Mac, iPhone e iPad che organizza i compiti attorno agli impegni fissi e alle energie disponibili in quel giorno.</p>
+            </div>
+            <span class="project-stack">SwiftUI · SwiftData · Foundation Models</span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="project" id="lexicon">
+            <span class="project-number">04</span>
+            <div class="project-main">
+              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/lexicon" target="_blank" rel="noreferrer">Lexicon</a> <span class="project-tag">In lavorazione</span></h3>
+              <p class="project-description">Mi piace imparare un po' di ogni lingua, quindi sto creando il mio strumento di studio. Incolla un testo reale: un LLM locale spiega le parole che non conosci, poi le ripassi con la ripetizione dilazionata. Qualcosa con cui studiare, non un corso o un gioco.</p>
+            </div>
+            <span class="project-stack">React · Dexie · Ollama</span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="project">
+            <span class="project-number">05</span>
+            <div class="project-main">
+              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/social-media-domains-reference-list" target="_blank" rel="noreferrer">Lista di blocco dei social</a> <span class="project-tag">In lavorazione</span></h3>
+              <p class="project-description">Una lista in formato hosts dei domini di social network e messaggistica, per Pi-hole e altri filtri DNS. La parte difficile è mantenerla aggiornata: piattaforme come YouTube usano migliaia di domini che cambiano continuamente. Il prossimo passo è individuarli automaticamente.</p>
+            </div>
+            <span class="project-stack">Shell · Pi-hole</span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </article>
+        </div>
+        <a class="all-work text-link" href="https://github.com/Lacrimosica?tab=repositories" target="_blank" rel="noreferrer">
+          Altri progetti su GitHub <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+
+      <section class="experience section" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="eyebrow" id="experience-title">Esperienza</p>
+        </div>
+
+        <div class="experience-columns">
+          <div class="experience-column experience-column--technology">
+            <h3 class="experience-phrase">Creare codice.</h3>
+            <h3 class="experience-kicker">01 / Software e tecnologia</h3>
+            <ol class="experience-list">
+              <li class="experience-item">
+                <div class="experience-head">
+                  <h4 class="experience-role">Ingegnere software, Backend e Cloud</h4>
+                  <span class="experience-meta"><a class="experience-org" href="https://glue-labs.com" target="_blank" rel="noreferrer">Glue Labs</a> · 2023 – 2025</span>
+                </div>
+                <p>Ho seguito backend e cloud di due prodotti interni: <a class="text-link-inline" href="https://pupau.ai" target="_blank" rel="noreferrer">Pupau</a>, una piattaforma di agenti IA, e <a class="text-link-inline" href="https://apps.apple.com/it/app/baghera-hr/id6449086600" target="_blank" rel="noreferrer">Baghera</a>, un'app per le risorse umane. In diversi progetti per clienti ero l'unico ingegnere backend e ero reperibile.</p>
+                <ul class="experience-points">
+                  <li>Ho rintracciato la causa di una query critica lenta in un errore nei dati a monte.</li>
+                  <li>Ho guidato la separazione di un monolite in microservizi su Kubernetes.</li>
+                  <li>Ho aggiunto SSO tramite Keycloak ad Apache Superset senza fare un fork.</li>
+                  <li>Integrazioni per clienti: PDND per progetti PNRR, pagamenti, chatbot, e-commerce e API di magazzino, per esempio <a class="text-link-inline" href="https://easy-plan.app/" target="_blank" rel="noreferrer">Easy Plan</a>.</li>
+                  <li>Ho tenuto un corso di backend e seguito uno stagista.</li>
+                </ul>
+                <p class="experience-stack">TypeScript · NestJS · Java · Python · GCP · Kubernetes · PostgreSQL · Kafka</p>
+              </li>
+              <li class="experience-item">
+                <div class="experience-head">
+                  <h4 class="experience-role">Ingegnere software</h4>
+                  <span class="experience-meta"><a class="experience-org" href="https://orbyta.it" target="_blank" rel="noreferrer">Orbyta Technologies</a> · 2022 – 2023</span>
+                </div>
+                <p>API REST e microservizi su Azure per clienti del trasporto pubblico. Ho anche eseguito audit sulla sicurezza delle dipendenze con Snyk (dipendenze Java e immagini Docker di base) e scritto i piani di correzione.</p>
+                <p class="experience-stack">Java · Spring Boot · Angular · Azure · PostgreSQL</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="experience-column experience-column--community">
+            <h3 class="experience-phrase">Curare comunità.</h3>
+            <h3 class="experience-kicker">02 / Persone e organizzazione</h3>
+            <ol class="experience-list">
+              <li class="experience-item">
+                <div class="experience-head">
+                  <h4 class="experience-role">Vicepresidente e segretario</h4>
+                  <span class="experience-meta"><a class="experience-org" href="https://www.dialogueexplorebond.it" target="_blank" rel="noreferrer">Dialogue Explore Bond</a> · 2024 – 2025</span>
+                </div>
+                <p>Punto di riferimento per volontari, soci e consiglio direttivo. Ho contribuito a organizzare l'accoglienza dei volontari: colloqui, formazione, riconoscimento e follow-up individuali. Ho costruito una rete di riferimento con altre realtà torinesi del Terzo Settore, tra cui Arci e ACMOS.</p>
+              </li>
+              <li class="experience-item">
+                <div class="experience-head">
+                  <h4 class="experience-role">Coordinatore IT e sistemi</h4>
+                  <span class="experience-meta"><a class="experience-org" href="https://www.dialogueexplorebond.it" target="_blank" rel="noreferrer">Dialogue Explore Bond</a> · 2023 – 2024</span>
+                </div>
+                <p>Ho organizzato lo spazio di lavoro condiviso, la knowledge base e la documentazione, gestendo account e accessi. Ho seguito anche una revisione sulla conformità GDPR e alle normative del Terzo Settore.</p>
+              </li>
+              <li class="experience-item">
+                <div class="experience-head">
+                  <h4 class="experience-role">Tesoriere</h4>
+                  <span class="experience-meta"><a class="experience-org" href="https://www.dialogueexplorebond.it" target="_blank" rel="noreferrer">Dialogue Explore Bond</a> · 2022 – 2023</span>
+                </div>
+                <p>Ho gestito il bilancio annuale e costituito un piccolo gruppo tesoreria perché il lavoro non facesse capo a una sola persona. Con il consiglio direttivo ho scritto le richieste annuali di finanziamento al Politecnico di Torino.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <dl class="experience-education">
+          <div>
+            <dt>MSc Cybersecurity Engineering</dt>
+            <dd>Politecnico di Torino · 2026 – in corso</dd>
+          </div>
+          <div>
+            <dt>BSc Computer Engineering</dt>
+            <dd>Politecnico di Torino · 2019 – 2023</dd>
+          </div>
+          <div>
+            <dt>Lingue</dt>
+            <dd>Persiano (madrelingua) · Inglese (C2) · Italiano (C2) · Francese (A2) · Tedesco (A1)</dd>
+          </div>
+          <div>
+            <dt>Sto studiando</dt>
+            <dd>Arabo · Olandese · Giapponese · Portoghese (vedi <a class="text-link-inline" href="#lexicon">Lexicon</a>)</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="story-section section" id="story" aria-labelledby="story-title">
+        <div class="story-copy">
+          <p class="eyebrow">Cosa conta per me</p>
+          <h2 id="story-title" aria-label="Non si tratta mai della tecnologia. Conta per chi funziona.">
+            <span aria-hidden="true">Non si tratta mai</span><br>
+            <span class="story-rotator" aria-hidden="true" data-subjects="dell'IA|del telaio meccanico|della catena di montaggio|della stampa|di internet|dello smartphone|dell'algoritmo|dell'app">dell'IA.</span><br>
+            <span aria-hidden="true">Conta per chi funziona.</span>
+          </h2>
+          <p>
+            Sono cresciuto dentro sistemi che avevano già deluso le persone.
+            Perciò non mi entusiasmano tanto i nuovi strumenti. Chiedo <strong>a chi
+            servono, chi resta fuori e chi paga.</strong>
+          </p>
+          <p>
+            Le novità arrivano in un mondo già esistente. Dove il lavoro
+            <strong>logora le persone</strong>, le logora più in fretta. Dove
+            poche persone già <strong>controllano le opportunità</strong>, ne
+            tengono ancora di più. Dove <strong>la cura resta a persone non pagate</strong>,
+            sono loro a portarne il peso maggiore.
+          </p>
+          <p>
+            Ho studiato chimica prima dell'ingegneria informatica, e il principio
+            di Le Châtelier continua a orientare il mio modo di pensare. Disturba
+            un sistema e torna allo stesso equilibrio. Acceleralo e ci arriverà
+            prima. L'unico modo per raggiungere un altro equilibrio è cambiare
+            le condizioni in cui vive. Questo è il lavoro: non subire passivamente
+            ciò che accade, ma cambiare insieme ciò che accadrà dopo.
+            <a class="text-link-inline" href="#le-chatelier">Vedi in pratica ↓</a>
+          </p>
+          <p class="story-signoff">
+            Ingegnere software · Organizzazione del Terzo Settore · Attivista per la salute mentale<br>
+            Torino, Italia
+          </p>
+        </div>
+        <figure class="story-portrait">
+          <div class="portrait-media">
+            <img src="/assets/momo.jpg" alt="Mômô Goudarzi" width="1152" height="768">
+          </div>
+        </figure>
+      </section>
+
+      <section class="lab section" id="le-chatelier" data-cursor="ink" aria-labelledby="lab-title">
+        <div class="lab-heading">
+          <div class="lab-intro">
+            <p class="eyebrow">Le Châtelier in pratica</p>
+            <h2 id="lab-title">Ogni <span>sistema</span><br>reagisce.</h2>
+            <p class="lab-lead">
+              In chimica, un sistema in equilibrio reagisce a qualsiasi alterazione.
+              Aggiungi qualcosa, togli qualcosa, comprimilo: alle stesse condizioni
+              torna allo stesso bilanciamento, la costante di equilibrio. Un catalizzatore
+              lo fa arrivare più in fretta. Solo una variazione delle condizioni,
+              come la temperatura di una reazione, sposta davvero l'equilibrio.
+              Scegli un evento e osserva entrambe le dinamiche.
+            </p>
+          </div>
+          <div class="lab-picks" role="group" aria-label="Eventi di disturbo">
+            <button class="lab-pick" type="button" data-id="ai" data-travel="0" aria-controls="lab-ai">
+              <span class="lab-pick-kicker">Software e IA</span>
+              <span class="lab-pick-title">Un assistente IA entra in servizio</span>
+            </button>
+            <button class="lab-pick" type="button" data-id="security" data-travel="200" aria-controls="lab-security">
+              <span class="lab-pick-kicker">Cybersecurity</span>
+              <span class="lab-pick-title">Un incidente di sicurezza</span>
+            </button>
+            <button class="lab-pick" type="button" data-id="bando" data-travel="270" aria-controls="lab-bando">
+              <span class="lab-pick-kicker">Progettazione sociale</span>
+              <span class="lab-pick-title">Apre un bando</span>
+            </button>
+            <button class="lab-pick" type="button" data-id="conflict" data-travel="135" aria-controls="lab-conflict">
+              <span class="lab-pick-kicker">Persone</span>
+              <span class="lab-pick-title">Due persone smettono di collaborare</span>
+            </button>
+            <button class="lab-pick" type="button" data-id="tools" data-travel="45" aria-controls="lab-tools">
+              <span class="lab-pick-kicker">Strumenti digitali</span>
+              <span class="lab-pick-title">Il gruppo passa a una piattaforma</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="lab-body">
+          <div class="lab-view">
+            <div class="lab-scope">
+              <div class="lab-toolbar">
+                <button class="lab-slow" type="button">
+                  <span class="lab-slow-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>
+                  </span>
+                  Al rallentatore
+                </button>
+                <div class="lab-zoom" role="group" aria-label="Zoom">
+                  <button type="button" data-zoom="-1" aria-label="Zoom out">−</button>
+                  <span class="lab-zoom-level">1×</span>
+                  <button type="button" data-zoom="1" aria-label="Zoom in">+</button>
+                  <span class="lab-zoom-hint" aria-hidden="true">oppure clicca la lente</span>
+                </div>
+              </div>
+              <canvas aria-hidden="true"></canvas>
+              <svg class="lab-ring" viewBox="-8 -8 216 216" aria-hidden="true"></svg>
+              <div class="lab-gauge">
+                <span class="lab-gauge-label">Condizioni</span>
+                <span class="lab-gauge-track" aria-hidden="true"><i class="lab-gauge-marker"></i></span>
+                <span class="lab-gauge-ends" aria-hidden="true"><span>Vecchie</span><span>Nuove</span></span>
+                <span class="lab-gauge-condition"></span>
+              </div>
+            </div>
+            <div class="lab-readout">
+              <div class="lab-live">
+                <p class="lab-caption-step">All'equilibrio</p>
+                <p class="lab-caption-text">Gli atomi si trasformano gli uni negli altri alla stessa velocità in entrambe le direzioni, quindi le quantità restano stabili. Quell'equilibrio è determinato dalle condizioni. Scegli un disturbo.</p>
+              </div>
+              <div class="lab-guide" hidden aria-live="polite">
+                <p class="lab-guide-step"></p>
+                <div class="lab-guide-block">
+                  <h3>Al microscopio</h3>
+                  <p class="lab-guide-science"></p>
+                </div>
+                <div class="lab-guide-block lab-guide-practice">
+                  <h3>In pratica</h3>
+                  <div class="lab-guide-body"></div>
+                </div>
+              </div>
+              <figure class="lab-chart" aria-hidden="true">
+                <figcaption>Quantità nel sistema nel tempo</figcaption>
+                <canvas></canvas>
+                <ul class="lab-legend"></ul>
+              </figure>
+              <ul class="lab-chips" aria-hidden="true"></ul>
+              <div class="lab-controls">
+                <div class="lab-guide-nav" hidden>
+                  <button class="lab-back" type="button">⏪ Torna indietro</button>
+                  <button class="lab-next" type="button">Fase successiva →</button>
+                  <button class="lab-exit" type="button">Esci dal rallentatore</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lab-panels">
+          <article class="lab-panel" id="lab-ai" data-id="ai">
+            <div class="lab-col" data-step="disturbance">
+              <h3><span>01</span> Disturbo</h3>
+                <p>Un team di prodotto mette online un assistente IA che risponde alle domande dei clienti usando i documenti interni dell'azienda.</p>
+            </div>
+            <div class="lab-col lab-push" data-step="counter">
+              <h3><span>02</span> Come reagisce il sistema</h3>
+              <ul>
+                <li>Documenti obsoleti, serviti in fretta</li>
+                <li>Risposte sbagliate dette con sicurezza</li>
+                <li>Nessuno si occupa delle fonti</li>
+                <li>Strumenti paralleli non approvati</li>
+              </ul>
+            </div>
+            <div class="lab-col lab-fix" data-step="settled">
+              <h3><span>03</span> Cosa cambio</h3>
+              <ul>
+                <li data-short="Fonti pulite e datate">Pulire e datare le fonti prima che vengano indicizzate.</li>
+                <li data-short="Ogni fonte ha un responsabile">Dare a ogni fonte un responsabile che la mantenga aggiornata.</li>
+                <li data-short="Test su domande reali">Testarla sulle domande che fanno davvero le persone, non sulle demo.</li>
+                <li data-short="Una persona decide">Lasciare una persona responsabile delle decisioni importanti.</li>
+              </ul>
+            </div>
+            <p class="lab-principle">L'IA è un catalizzatore: porta un team all'equilibrio che già aveva, solo più rapidamente. Cambia prima l'equilibrio.</p>
+          </article>
+
+          <article class="lab-panel" id="lab-security" data-id="security">
+            <div class="lab-col" data-step="disturbance">
+              <h3><span>01</span> Disturbo</h3>
+              <p>Una vulnerabilità critica compare in una dipendenza oppure trapela una credenziale.</p>
+            </div>
+            <div class="lab-col lab-push" data-step="counter">
+              <h3><span>02</span> Come reagisce il sistema</h3>
+              <ul>
+                <li>Patch fatte nel panico</li>
+                <li>Colpevolizzazione</li>
+                <li>Tutti esclusi dal sistema</li>
+                <li>Allarmi ignorati da tutti</li>
+              </ul>
+            </div>
+            <div class="lab-col lab-fix" data-step="settled">
+              <h3><span>03</span> Cosa cambio</h3>
+              <ul>
+                <li data-short="Segreti fuori dal codice">Togliere i segreti dal codice, così una credenziale trapelata si revoca in pochi minuti.</li>
+                <li data-short="Patch in base all'esposizione reale">Applicare le patch in base all'esposizione reale, non solo al punteggio di severità.</li>
+                <li data-short="Segnalare senza colpevolizzare">Scrivere un post-mortem senza colpe, così le persone segnaleranno prima la prossima volta.</li>
+                <li data-short="La via sicura è la più semplice">Rendere facile la strada sicura: SSO e minimo privilegio.</li>
+              </ul>
+            </div>
+            <p class="lab-principle">Bloccare tutto dopo una fuga è una reazione. Rendere facile la strada sicura è una nuova condizione.</p>
+          </article>
+
+          <article class="lab-panel" id="lab-bando" data-id="bando">
+            <div class="lab-col" data-step="disturbance">
+              <h3><span>01</span> Disturbo</h3>
+              <p>Una fondazione apre un bando con una scadenza ravvicinata.</p>
+            </div>
+            <div class="lab-col lab-push" data-step="counter">
+              <h3><span>02</span> Come reagisce il sistema</h3>
+              <ul>
+                <li>Progetto piegato al finanziamento</li>
+                <li>Partner soltanto sulla carta</li>
+                <li>Budget non coerente con il lavoro</li>
+                <li>Indicatori che nessuno misura</li>
+              </ul>
+            </div>
+            <div class="lab-col lab-fix" data-step="settled">
+              <h3><span>03</span> Cosa cambio</h3>
+              <ul>
+                <li data-short="Partire dal bisogno">Partire dall'analisi dei bisogni, poi verificare se il bando è adatto.</li>
+                <li data-short="Ogni obiettivo ha un compito">Collegare ogni obiettivo a un compito reale e a una persona responsabile.</li>
+                <li data-short="Partner con un ruolo reale">Coinvolgere partner con un ruolo reale e una voce di budget.</li>
+                <li data-short="Chiedere alle persone">Chiedere alle persone a cui è rivolto se ha aiutato.</li>
+              </ul>
+            </div>
+            <p class="lab-principle">Piegarlo al bando è una reazione. Partire dal bisogno cambia le condizioni.</p>
+          </article>
+
+          <article class="lab-panel" id="lab-conflict" data-id="conflict">
+            <div class="lab-col" data-step="disturbance">
+              <h3><span>01</span> Disturbo</h3>
+              <p>Due persone di un gruppo litigano sul modo di fare una cosa e il lavoro si blocca.</p>
+            </div>
+            <div class="lab-col lab-push" data-step="counter">
+              <h3><span>02</span> Come reagisce il sistema</h3>
+              <ul>
+                <li>Si formano due schieramenti</li>
+                <li>Le persone tacciono</li>
+                <li>Passaparola invece di feedback</li>
+                <li>Qualcuno se ne va</li>
+              </ul>
+            </div>
+            <div class="lab-col lab-fix" data-step="settled">
+              <h3><span>03</span> Cosa cambio</h3>
+              <ul>
+                <li data-short="Individuare chi possiede il problema">Capire chi è responsabile del problema prima che qualcuno provi a risolverlo.</li>
+                <li data-short="Ascoltare prima di rispondere">Ascoltare in modo attivo e ripetere ciò che ho sentito prima di rispondere.</li>
+                <li data-short="Usare messaggi in prima persona">Dire cosa vedo, come mi coinvolge e di cosa ho bisogno.</li>
+                <li data-short="Una soluzione accettabile per entrambi">Cercare una soluzione accettata da entrambe le persone (il metodo win-win di Gordon), poi fissare una verifica.</li>
+              </ul>
+            </div>
+            <p class="lab-principle">Schierarsi è una reazione. Un modo condiviso di risolvere i conflitti, conosciuto da tutti, è una nuova condizione.</p>
+          </article>
+
+          <article class="lab-panel" id="lab-tools" data-id="tools">
+            <div class="lab-col" data-step="disturbance">
+              <h3><span>01</span> Disturbo</h3>
+              <p>Un gruppo di volontari trasferisce chat, file e iscrizioni su una piattaforma condivisa.</p>
+            </div>
+            <div class="lab-col lab-push" data-step="counter">
+              <h3><span>02</span> Come reagisce il sistema</h3>
+              <ul>
+                <li>WhatsApp resta il canale reale</li>
+                <li>“Non sono esperto”</li>
+                <li>Due posti per ogni cosa</li>
+                <li>Solo ~5 persone lo usano</li>
+              </ul>
+            </div>
+            <div class="lab-col lab-fix" data-step="settled">
+              <h3><span>03</span> Cosa ho cambiato</h3>
+              <ul>
+                <li data-short="Ogni flusso documentato">Documentare ogni flusso, inclusi ingresso e uscita.</li>
+                <li data-short="Un luogo per ogni informazione">Tenere un solo luogo per ogni tipo di informazione.</li>
+                <li data-short="La soluzione è rimasta">Un anno dopo, la piattaforma è ancora il luogo che tutti consultano.</li>
+              </ul>
+            </div>
+            <p class="lab-principle">Uno strumento nuovo sulle abitudini vecchie torna alle abitudini vecchie. Cambia dove vive il lavoro, non solo lo strumento.</p>
+          </article>
+        </div>
+
+
+
+        <p class="lab-mantra">Insistere non basterà. <span>Cambia le condizioni.</span></p>
+      </section>
+
+      <section class="manifesto section" id="manifesto" aria-labelledby="manifesto-title">
+        <p class="manifesto-kicker"><span>06</span> Idee · come crescono</p>
+        <h2 class="manifesto-title" id="manifesto-title">Arriva una nuova idea.</h2>
+        <ol class="manifesto-path">
+          <li class="milestone">
+            <span class="milestone-node" aria-hidden="true"></span>
+            <h3><span>01</span> Disturbo</h3>
+            <p class="milestone-title">Qualcuno dice che potrebbe essere diverso</p>
+            <p>Chi è destinatario della cura, a chi serve il lavoro, chi ha voce in capitolo. Questa pagina è una di quelle voci.</p>
+          </li>
+          <li class="milestone milestone--push">
+            <span class="milestone-node" aria-hidden="true"></span>
+            <h3><span>02</span> Resistenza</h3>
+            <p class="milestone-title">Il sistema reagisce</p>
+            <ul class="manifesto-leaves">
+              <li>“È sempre stato così”</li>
+              <li>“Bello, ma non realistico”</li>
+              <li>Diventa solo uno slogan</li>
+              <li>Chi lo porta avanti si stanca</li>
+            </ul>
+            <p class="milestone-aside">Lasciate a sé, le cose tornano dove erano.</p>
+          </li>
+          <li class="milestone milestone--change">
+            <span class="milestone-node" aria-hidden="true"></span>
+            <h3><span>03</span> Cosa cambio</h3>
+            <p class="milestone-title">Allora cambio le condizioni</p>
+            <ul class="manifesto-seeds">
+              <li><strong>Rendilo una pratica.</strong> Qualcosa che le persone fanno ogni settimana, non una volta d'accordo.</li>
+              <li><strong>Incorporalo.</strong> Nelle regole, nel budget, tra chi è al tavolo.</li>
+              <li><strong>Non portarlo da solo.</strong> Un gruppo sopravvive alla partenza di una persona.</li>
+              <li><strong>Trasmettilo.</strong> Perché sopravviva a chi lo ha avviato.</li>
+            </ul>
+          </li>
+          <li class="milestone milestone--balance">
+            <span class="milestone-node" aria-hidden="true"></span>
+            <h3><span>04</span> Un nuovo equilibrio</h3>
+            <p class="milestone-title">E stavolta regge</p>
+            <p class="manifesto-principle">Un'idea da sola incontra resistenza come ogni altra cosa. Dura quando cambia le condizioni: chi decide, chi viene pagato, chi è nella stanza.</p>
+          </li>
+        </ol>
+        <aside class="manifesto-note" aria-labelledby="basaglia-title">
+          <p class="manifesto-note-kicker" id="basaglia-title">
+            <svg viewBox="-2 -8 24 16" aria-hidden="true"><path d="M0 0 C5 -6 14 -7 20 0 C14 6 5 6 0 0 Z"/></svg>
+            1978 · La <a href="https://it.wikipedia.org/wiki/Legge_180" target="_blank" rel="noreferrer">legge Basaglia</a>
+          </p>
+          <p>L'Italia ha chiuso i manicomi per legge. A Trieste la riforma ha funzionato perché il gruppo di Franco Basaglia aveva costruito per anni centri territoriali di salute mentale in grado di prendere il loro posto. Dove non sono stati costruiti, la riforma si è fermata.</p>
+          <p class="manifesto-note-point">La legge è stata il disturbo. I centri hanno cambiato le condizioni.</p>
+        </aside>
+        <p class="manifesto-invite">Se ti ritrovi in queste parole, parliamone. Nessun progetto necessario, basta una conversazione... <a href="#contact">Scrivimi ↓</a></p>
+      </section>
+
+      <section class="contact section" id="contact" data-cursor="ink" aria-labelledby="contact-title">
+        <p class="eyebrow">Di codice, persone o qualunque altra cosa</p>
+        <h2 id="contact-title" aria-label="Passa a salutare. Senza secondi fini.">Passa <span class="contact-hello">a salutare <span class="contact-face" aria-hidden="true">(^‿^)/</span></span><br><span>Senza secondi fini.</span></h2>
+        <p class="contact-lead">Un progetto, una domanda o semplicemente una chiacchierata con qualcuno di nuovo. Alcune delle persone a cui tengo di più sono nate da un ciao ricevuto da uno sconosciuto.</p>
+        <div class="icebreaker">
+          <p class="icebreaker-label">Non sai da dove cominciare? Rompiamo il ghiaccio.</p>
+          <p class="icebreaker-question" aria-live="polite">Come spremi il dentifricio: dalla fine o dal centro?</p>
+          <button class="icebreaker-shuffle" type="button" hidden>Sorprendimi ↻</button>
+        </div>
+        <a class="contact-link" href="mailto:lacrimosica@pm.me?subject=Ciao%20dal%20tuo%20sito&amp;body=Ciao%20M%C3%B4m%C3%B4%2C%0A%0AHo%20trovato%20il%20tuo%20sito%20e%20volevo%20salutarti.%0A%0AQualcosa%20su%20di%20me%3A%0A%0ADomanda%20per%20rompere%20il%20ghiaccio%3A%20Come%20spremi%20il%20dentifricio%3A%20dalla%20fine%20o%20dal%20centro%3F%0ALa%20mia%20risposta%3A%0A%0AA%20presto%2C%0A">lacrimosica@pm.me <span aria-hidden="true">↗</span></a>
+        <div class="social-links">
+          <a href="https://github.com/Lacrimosica" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/51226189" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year">2026</span> Mômô Goudarzi</span>
+      <a href="#top">Torna su ↑</a>
+      <span>Fatto a Torino, Italia</span>
+    </footer>
+    <div class="custom-cursor-dot" aria-hidden="true"></div>
+    <div class="custom-cursor-ring" aria-hidden="true"></div>
+    <script type="module" src="/it/main.js"></script>
+    <script type="module" src="/it/js/lab.js"></script>
+    <script type="module" src="/it/js/rotator.js"></script>
+    <script type="module" src="/it/js/manifesto-path.js"></script>
+    <script type="module" src="/js/nav-progress.js"></script>
+    <script type="module" src="/it/js/icebreaker.js"></script>
+  </body>
+</html>

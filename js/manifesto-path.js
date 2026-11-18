@@ -60,8 +60,8 @@ function start(root) {
       const lean = i % 2 ? sway : -sway;
       d += ` C ${a.x + lean} ${a.y + dy * 0.45}, ${b.x - lean} ${b.y - dy * 0.45}, ${b.x} ${b.y}`;
     }
-    const end = { x: last.x + sway * 0.25, y: last.y + 80 };
-    d += ` Q ${last.x + sway * 0.6} ${last.y + 40} ${end.x} ${end.y}`;
+    const end = { x: last.x + sway * 0.25, y: last.y + 200 };
+    d += ` Q ${last.x + sway * 0.6} ${last.y + 70} ${end.x} ${end.y}`;
     path.setAttribute("d", d);
     length = path.getTotalLength();
     path.style.strokeDasharray = `${length}`;

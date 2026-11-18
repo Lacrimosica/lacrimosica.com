@@ -15,6 +15,7 @@ const split = document.querySelector(".identity-split");
 const panels = Array.from(split.querySelectorAll(".identity-panel"));
 const announce = document.getElementById("equilibrium-announce");
 const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
+const coarsePointer = window.matchMedia("(hover: none), (pointer: coarse)");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const narrow = window.matchMedia("(max-width: 700px)");
 
@@ -158,7 +159,10 @@ function startFluidHero() {
   return true;
 }
 
-startFluidHero();
+// Unconfirmed guess for the iPhone bug (TICKETS.md T1): phones keep the SVG
+// fallback, while tablets and desktops still get the WebGL hero. Check the
+// iPhone in Safari Web Inspector before treating this as the fix.
+if (!(coarsePointer.matches && narrow.matches) && !reducedMotion.matches) startFluidHero();
 
 /* ---------- Custom cursor ----------
  * Each part of the page declares its cursor zone in markup with data-cursor

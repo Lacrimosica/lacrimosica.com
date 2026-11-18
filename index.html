@@ -15,9 +15,12 @@
       content="Backend &amp; cloud engineer: distributed systems, Kubernetes, production RAG and agents. Volunteer operations at a Turin nonprofit since 2022."
     >
     <meta property="og:url" content="https://lacrimosica.com/">
+    <link rel="alternate" hreflang="en" href="https://lacrimosica.com/">
+    <link rel="alternate" hreflang="it" href="https://lacrimosica.com/it/">
     <title>Mômô Goudarzi — Software Engineer &amp; Nonprofit Operations</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="stylesheet" href="/styles.css">
+    <link rel="prefetch" href="/it/" as="document">
   </head>
   <body>
     <header class="site-header">
@@ -27,7 +30,8 @@
         <a href="#work">Projects</a>
         <a class="nav-optional" href="#experience">Experience</a>
         <a href="#story">About</a>
-        <a class="nav-contact" href="mailto:m.gdrzi77@gmail.com">Say hello <span aria-hidden="true">↗</span></a>
+        <a class="nav-contact" href="mailto:lacrimosica@pm.me">Say hello <span aria-hidden="true">↗</span></a>
+        <a class="nav-language" href="/it/" hreflang="it" aria-label="Leggi in italiano">IT</a>
       </nav>
     </header>
 
@@ -49,16 +53,16 @@
             data-side="technology"
             aria-pressed="false"
           >
-            <span class="identity-kicker">01 / TECHNOLOGY</span>
+            <span class="identity-kicker">01 / Software and Tech</span>
             <span class="identity-title">
               <span class="visually-hidden">I build reliability, clarity and resilience into technologies.</span>
-              <span aria-hidden="true">I build <span class="identity-concept-rotator" data-suffix="" data-subjects="reliability|clarity|resilience">reliability</span><br>into technologies.</span>
+              <span aria-hidden="true"><span class="identity-title-line">I build <span class="identity-concept-rotator" data-suffix="" data-subjects="reliability|clarity|resilience">reliability</span></span><br>into technologies.</span>
             </span>
-            <span class="identity-summary">I build dependable systems, from backend foundations to practical AI features.</span>
+            <span class="identity-summary">Backend and cloud systems, and AI features where they actually help.</span>
             <span class="identity-reveal">
-              <span class="reveal-copy">I built the backend and cloud for an AI agent platform. The work included retrieval, tools for agents, session handling, and background workflows between services.</span>
+              <span class="reveal-copy">Most recently, the backend and cloud of an AI agent platform: retrieval, agent tools, sessions, and the background jobs between services.</span>
             </span>
-            <span class="identity-hint">Hover, focus or tap to see more <span aria-hidden="true">↘</span></span>
+            <span class="identity-hint">Tap, focus or hover to see more <span aria-hidden="true">↘</span></span>
           </button>
 
           <button
@@ -67,16 +71,16 @@
             data-side="community"
             aria-pressed="false"
           >
-            <span class="identity-kicker">02 / PEOPLE &amp; OPERATIONS</span>
+            <span class="identity-kicker">02 / People and Operations</span>
             <span class="identity-title">
               <span class="visually-hidden">I build belonging, agency and shared purpose into communities.</span>
-              <span aria-hidden="true">I build <span class="identity-concept-rotator identity-concept-rotator--people" data-suffix="" data-subjects="belonging|agency|shared purpose">belonging</span><br>into communities.</span>
+              <span aria-hidden="true"><span class="identity-title-line">I build <span class="identity-concept-rotator identity-concept-rotator--people" data-suffix="" data-subjects="belonging|agency|shared purpose">belonging</span></span><br>into communities.</span>
             </span>
-            <span class="identity-summary">I make it easier for people to find support, contribute, and take responsibility.</span>
+            <span class="identity-summary">The unglamorous side of groups: roles, tools, money and handovers, so the work doesn’t rest on one person.</span>
             <span class="identity-reveal">
-              <span class="reveal-copy">At a free peer-support nonprofit, I set up the internal tools and built a referral network with other local organizations.</span>
+              <span class="reveal-copy">At a free peer-support nonprofit, I set up the internal tools and built a referral network with other local organisations.</span>
             </span>
-            <span class="identity-hint">Hover, focus or tap to see more <span aria-hidden="true">↙</span></span>
+            <span class="identity-hint">Tap, focus or hover to see more <span aria-hidden="true">↙</span></span>
           </button>
 
           <p class="visually-hidden" id="equilibrium-announce" aria-live="polite"></p>
@@ -86,13 +90,13 @@
       <section class="work section" id="work" aria-labelledby="work-title">
         <div class="section-heading">
           <p class="eyebrow">Selected projects</p>
-          <h2 id="work-title">Things I build<br>and use myself.</h2>
+          <h2 id="work-title">Started as mine, grew into something <em>we</em> could use.</h2>
         </div>
         <div class="project-list">
           <article class="project">
             <span class="project-number">01</span>
             <div class="project-main">
-              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/niki" target="_blank" rel="noreferrer">Niki</a></h3>
+              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/niki" target="_blank" rel="noreferrer">Niki</a> <span class="project-tag">Work in progress</span></h3>
               <p class="project-description">A multi-tenant platform for the administration of Italian nonprofits. It manages members, volunteers, board terms, assemblies and Third Sector compliance.</p>
               <a class="project-extra" href="https://niki-demo.lacrimosica.com" target="_blank" rel="noreferrer">Live demo <span aria-hidden="true">↗</span></a>
             </div>
@@ -102,7 +106,7 @@
           <article class="project">
             <span class="project-number">02</span>
             <div class="project-main">
-              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/dossier" target="_blank" rel="noreferrer">Dossier</a> <span class="project-tag">My fork</span></h3>
+              <h3 class="project-title">Dossier <span class="project-tag">My fork</span> <span class="project-tag">Work in progress</span></h3>
               <p class="project-description">My fork of an open-source, self-hosted resume builder. I added a refine chat that tailors one application, a flow that sends new facts back to the profile, visual theme settings and server backups. I built it with AI coding tools.</p>
               <a class="project-extra" href="https://github.com/AienTech/dossier" target="_blank" rel="noreferrer">Original project <span aria-hidden="true">↗</span></a>
             </div>
@@ -112,17 +116,17 @@
           <article class="project">
             <span class="project-number">03</span>
             <div class="project-main">
-              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/emo" target="_blank" rel="noreferrer">emo</a></h3>
-              <p class="project-description">A native planner for Mac, iPhone and iPad. It puts your tasks around your fixed commitments. Each day, you record your energy level, and the planner sets the tasks to match it.</p>
+              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/emo" target="_blank" rel="noreferrer">Emo</a> <span class="project-tag">Work in progress</span></h3>
+              <p class="project-description">“E mo’?” is Italian for “and now (what)?”. Emo answers it: a native planner for Mac, iPhone and iPad that fits your tasks around your fixed commitments and around how much energy you have that day.</p>
             </div>
             <span class="project-stack">SwiftUI · SwiftData · Foundation Models</span>
             <span class="project-arrow" aria-hidden="true">↗</span>
           </article>
-          <article class="project">
+          <article class="project" id="lexicon">
             <span class="project-number">04</span>
             <div class="project-main">
-              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/lexicon" target="_blank" rel="noreferrer">lexicon</a></h3>
-              <p class="project-description">A tool to learn languages. Paste a text, and a local LLM adds information to the words that you do not know. Then review these words with spaced repetition.</p>
+              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/lexicon" target="_blank" rel="noreferrer">Lexicon</a> <span class="project-tag">Work in progress</span></h3>
+              <p class="project-description">I like learning a little of every language, so I’m building my own study tool. Paste a real text, a local LLM explains the words you don’t know, and you review them later with spaced repetition. Something to study with, not a course or a game.</p>
             </div>
             <span class="project-stack">React · Dexie · Ollama</span>
             <span class="project-arrow" aria-hidden="true">↗</span>
@@ -130,8 +134,8 @@
           <article class="project">
             <span class="project-number">05</span>
             <div class="project-main">
-              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/social-media-domains-reference-list" target="_blank" rel="noreferrer">Social media blocklist</a></h3>
-              <p class="project-description">A list of social media and messaging domains in hosts format, for Pi-hole and other DNS filters. Use it to block social media on a network.</p>
+              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/social-media-domains-reference-list" target="_blank" rel="noreferrer">Social media blocklist</a> <span class="project-tag">Work in progress</span></h3>
+              <p class="project-description">A hosts-format list of social media and messaging domains, for Pi-hole and other DNS filters. The hard part is keeping it current: a platform like YouTube runs on thousands of domains, and they keep changing. Next, I want to find them automatically.</p>
             </div>
             <span class="project-stack">Shell · Pi-hole</span>
             <span class="project-arrow" aria-hidden="true">↗</span>
@@ -144,63 +148,64 @@
 
       <section class="experience section" id="experience" aria-labelledby="experience-title">
         <div class="section-heading">
-          <p class="eyebrow">Experience</p>
-          <h2 id="experience-title">Backend work<br>and nonprofit work.</h2>
+          <p class="eyebrow" id="experience-title">Experience</p>
         </div>
 
         <div class="experience-columns">
           <div class="experience-column experience-column--technology">
-            <h3 class="experience-kicker">01 / Software &amp; teaching</h3>
+            <h3 class="experience-phrase">Shaping code.</h3>
+            <h3 class="experience-kicker">01 / Software and Tech</h3>
             <ol class="experience-list">
               <li class="experience-item">
                 <div class="experience-head">
                   <h4 class="experience-role">Software Engineer, Backend &amp; Cloud</h4>
-                  <span class="experience-meta">Glue Labs · 2023 – 2025</span>
+                  <span class="experience-meta"><a class="experience-org" href="https://glue-labs.com" target="_blank" rel="noreferrer">Glue Labs</a> · 2023 – 2025</span>
                 </div>
-                <p>I owned the backend and cloud of two in-house products: <a class="text-link-inline" href="https://pupau.ai" target="_blank" rel="noreferrer">Pupau</a>, an AI agent platform, and Baghera, an HR platform. I was also the only backend engineer on 5+ client projects, and on call.</p>
+                <p>I owned the backend and cloud of two in-house products: <a class="text-link-inline" href="https://pupau.ai" target="_blank" rel="noreferrer">Pupau</a>, an AI agent platform, and <a class="text-link-inline" href="https://apps.apple.com/it/app/baghera-hr/id6449086600" target="_blank" rel="noreferrer">Baghera</a>, an HR app. On several client projects I was the only backend engineer, and on call.</p>
                 <ul class="experience-points">
-                  <li>Made a critical query ~90% faster by tracing it to a data bug upstream.</li>
+                  <li>Tracked a slow critical query back to a data bug upstream.</li>
                   <li>Led the split of a monolith into microservices on Kubernetes.</li>
                   <li>Added Keycloak SSO to Apache Superset without forking it.</li>
-                  <li>Client integrations: PDND for PNRR projects, payments, chatbots, e-commerce and warehouse APIs. One public example is <a class="text-link-inline" href="https://easy-plan.app/" target="_blank" rel="noreferrer">Easy Plan</a>.</li>
-                  <li>Taught a backend course to 20+ developers and mentored an intern.</li>
+                  <li>Client integrations: PDND for PNRR projects, payments, chatbots, e-commerce and warehouse APIs, e.g. <a class="text-link-inline" href="https://easy-plan.app/" target="_blank" rel="noreferrer">Easy Plan</a>.</li>
+                  <li>Taught a backend course and mentored an intern.</li>
                 </ul>
                 <p class="experience-stack">TypeScript · NestJS · Java · Python · GCP · Kubernetes · PostgreSQL · Kafka</p>
               </li>
               <li class="experience-item">
                 <div class="experience-head">
                   <h4 class="experience-role">Software Engineer</h4>
-                  <span class="experience-meta">Orbyta Technologies · 2022 – 2023</span>
+                  <span class="experience-meta"><a class="experience-org" href="https://orbyta.it" target="_blank" rel="noreferrer">Orbyta Technologies</a> · 2022 – 2023</span>
                 </div>
-                <p>I built REST APIs and microservices on Microsoft Azure for public transport clients. I led dependency security audits with Snyk on 4+ production codebases (Java dependency trees and Docker base images). The client teams adopted my prioritized remediation reports.</p>
+                <p>REST APIs and microservices on Azure for public transport clients. I also ran dependency security audits with Snyk (Java dependencies and Docker base images) and wrote the remediation plans.</p>
                 <p class="experience-stack">Java · Spring Boot · Angular · Azure · PostgreSQL</p>
               </li>
             </ol>
           </div>
 
           <div class="experience-column experience-column--community">
+            <h3 class="experience-phrase">Shaping communities.</h3>
             <h3 class="experience-kicker">02 / People &amp; operations</h3>
             <ol class="experience-list">
               <li class="experience-item">
                 <div class="experience-head">
                   <h4 class="experience-role">Vice President &amp; Secretary</h4>
-                  <span class="experience-meta">Dialogue Explore Bond · 2024 – 2025</span>
+                  <span class="experience-meta"><a class="experience-org" href="https://www.dialogueexplorebond.it" target="_blank" rel="noreferrer">Dialogue Explore Bond</a> · 2024 – 2025</span>
                 </div>
-                <p>I was the contact person for ~50 volunteers, members and board members. I helped create the volunteer HR area, which did not exist before: intake interviews, training, recognition and growth paths with one-to-one follow-up. Volunteers moving into board roles went from ~2 to ~6 a year. I built a referral network with 7 Turin Third Sector organizations, including Arci and ACMOS, and it is still active.</p>
+                <p>Contact person for volunteers, members and the board. I helped set up how the association looks after its volunteers: intake interviews, training, recognition and one-to-one follow-up. I built a referral network with other Turin Third Sector organisations, including Arci and ACMOS.</p>
               </li>
               <li class="experience-item">
                 <div class="experience-head">
                   <h4 class="experience-role">IT &amp; Systems Coordinator</h4>
-                  <span class="experience-meta">Dialogue Explore Bond · 2023 – 2024</span>
+                  <span class="experience-meta"><a class="experience-org" href="https://www.dialogueexplorebond.it" target="_blank" rel="noreferrer">Dialogue Explore Bond</a> · 2023 – 2024</span>
                 </div>
-                <p>I set up the workspace, knowledge base and documentation, and managed accounts for ~50 users with documented onboarding and offboarding. I met the non-technical volunteers one by one, and active use of the tools went from ~5 to ~30 volunteers in 12 months. I also ran a full GDPR and Third Sector compliance review and handed it to my successor.</p>
+                <p>I set up the shared workspace, knowledge base and documentation, and managed accounts and access. I also ran a GDPR and Third Sector compliance review.</p>
               </li>
               <li class="experience-item">
                 <div class="experience-head">
                   <h4 class="experience-role">Treasurer</h4>
-                  <span class="experience-meta">Dialogue Explore Bond · 2022 – 2023</span>
+                  <span class="experience-meta"><a class="experience-org" href="https://www.dialogueexplorebond.it" target="_blank" rel="noreferrer">Dialogue Explore Bond</a> · 2022 – 2023</span>
                 </div>
-                <p>I managed the ~€7,500 annual budget and built a treasury team, which did not exist before, then trained the volunteers who took it over. With the board, I co-wrote the yearly funding applications to Politecnico di Torino (up to ~€10,000) and kept audit-ready records for the funds.</p>
+                <p>I managed the annual budget and set up a small treasury team so the work didn’t sit with one person. With the board, I co-wrote the yearly funding applications to Politecnico di Torino.</p>
               </li>
             </ol>
           </div>
@@ -213,18 +218,22 @@
           </div>
           <div>
             <dt>BSc Computer Engineering</dt>
-            <dd>Politecnico di Torino · 2019 – 2023 · 97/110</dd>
+            <dd>Politecnico di Torino · 2019 – 2023</dd>
           </div>
           <div>
             <dt>Languages</dt>
-            <dd>Persian (native) · English (C2) · Italian (C2) · French (A2)</dd>
+            <dd>Persian (native) · English (C2) · Italian (C2) · French (A2) · German (A1)</dd>
+          </div>
+          <div>
+            <dt>Learning</dt>
+            <dd>Arabic · Dutch · Japanese · Portuguese (see <a class="text-link-inline" href="#lexicon">Lexicon</a>)</dd>
           </div>
         </dl>
       </section>
 
       <section class="story-section section" id="story" aria-labelledby="story-title">
         <div class="story-copy">
-          <p class="eyebrow">Why I build</p>
+          <p class="eyebrow">What I care about</p>
           <h2 id="story-title" aria-label="It was never about the technology. It's about who it works for.">
             <span aria-hidden="true">It was never about</span><br>
             <span class="story-rotator" aria-hidden="true" data-subjects="AI|the power loom|the assembly line|the printing press|the internet|the smartphone|the algorithm|the app">AI.</span><br>
@@ -260,7 +269,6 @@
           <div class="portrait-media">
             <img src="/assets/momo.jpg" alt="Mômô Goudarzi" width="1152" height="768">
           </div>
-          <figcaption>Mômô Goudarzi</figcaption>
         </figure>
       </section>
 
@@ -494,11 +502,11 @@
 
 
 
-        <p class="lab-mantra">Don’t fight the push-back. <span>Change the conditions.</span></p>
+        <p class="lab-mantra">Pushing harder won’t hold. <span>Change the conditions.</span></p>
       </section>
 
       <section class="manifesto section" id="manifesto" aria-labelledby="manifesto-title">
-        <p class="manifesto-kicker"><span>06</span> Ideas · this page</p>
+        <p class="manifesto-kicker"><span>06</span> Ideas · how they grow</p>
         <h2 class="manifesto-title" id="manifesto-title">A new idea arrives.</h2>
         <ol class="manifesto-path">
           <li class="milestone">
@@ -537,20 +545,27 @@
             <p class="manifesto-principle">An idea on its own gets pushed back like anything else. It lasts when it changes the conditions: who decides, who gets paid, who’s in the room.</p>
           </li>
         </ol>
-        <p class="manifesto-note">In 1978, Italy closed its psychiatric hospitals with the <a href="https://en.wikipedia.org/wiki/Law_180" target="_blank" rel="noreferrer">Basaglia law</a>. It held in Trieste, where Franco Basaglia’s team had spent years building community mental health centres to replace them. Where nobody built those services, the reform stalled. The law was the disturbance. The centres changed the conditions.</p>
-        <p class="manifesto-invite">If this resonates, let’s talk. No project needed, just a conversation :) <a href="#contact">Say hello ↓</a></p>
+        <aside class="manifesto-note" aria-labelledby="basaglia-title">
+          <p class="manifesto-note-kicker" id="basaglia-title">
+            <svg viewBox="-2 -8 24 16" aria-hidden="true"><path d="M0 0 C5 -6 14 -7 20 0 C14 6 5 6 0 0 Z"/></svg>
+            1978 · The <a href="https://en.wikipedia.org/wiki/Law_180" target="_blank" rel="noreferrer">Basaglia law</a>
+          </p>
+          <p>Italy closed its psychiatric hospitals by law. In Trieste it held, because Franco Basaglia’s team had spent years building community mental health centres to take their place. Where nobody built them, the reform stalled.</p>
+          <p class="manifesto-note-point">The law was the disturbance. The centres changed the conditions.</p>
+        </aside>
+        <p class="manifesto-invite">If this resonates, let’s talk. No project needed, just a conversation... <a href="#contact">Say hello ↓</a></p>
       </section>
 
       <section class="contact section" id="contact" data-cursor="ink" aria-labelledby="contact-title">
-        <p class="eyebrow">Technology, people, or neither</p>
-        <h2 id="contact-title">Say <span class="contact-hello">hello <span class="contact-face">:3</span></span><br><span>No agenda needed.</span></h2>
-        <p class="contact-lead">A project, a question, or just a chat with someone new. Some of my favourite people started as a random message, or a random encounter.</p>
+        <p class="eyebrow">About code, people, or anything else</p>
+        <h2 id="contact-title" aria-label="Say hello. No agenda needed.">Say <span class="contact-hello">hello <span class="contact-face" aria-hidden="true">(^‿^)/</span></span><br><span>No agenda needed.</span></h2>
+        <p class="contact-lead">A project, a question, or just a chat with someone new. Some of my favourite people started as a hello from a stranger.</p>
         <div class="icebreaker">
           <p class="icebreaker-label">Don’t know how to start? Let’s break the ice.</p>
           <p class="icebreaker-question" aria-live="polite">How do you squeeze the toothpaste: from the end, or from the middle?</p>
           <button class="icebreaker-shuffle" type="button" hidden>Surprise me ↻</button>
         </div>
-        <a class="contact-link" href="mailto:m.gdrzi77@gmail.com?subject=Hello%20from%20your%20website&amp;body=Hi%20M%C3%B4m%C3%B4%2C%0A%0AI%20came%20across%20your%20website%20and%20wanted%20to%20say%20hello.%0A%0AA%20little%20about%20me%3A%20%0A%0AIcebreaker%3A%20How%20do%20you%20squeeze%20the%20toothpaste%3A%20from%20the%20end%2C%20or%20from%20the%20middle%3F%0AMy%20answer%3A%20%0A%0ATalk%20soon%2C%0A">m.gdrzi77@gmail.com <span aria-hidden="true">↗</span></a>
+        <a class="contact-link" href="mailto:lacrimosica@pm.me?subject=Hello%20from%20your%20website&amp;body=Hi%20M%C3%B4m%C3%B4%2C%0A%0AI%20came%20across%20your%20website%20and%20wanted%20to%20say%20hello.%0A%0AA%20little%20about%20me%3A%20%0A%0AIcebreaker%3A%20How%20do%20you%20squeeze%20the%20toothpaste%3A%20from%20the%20end%2C%20or%20from%20the%20middle%3F%0AMy%20answer%3A%20%0A%0ATalk%20soon%2C%0A">lacrimosica@pm.me <span aria-hidden="true">↗</span></a>
         <div class="social-links">
           <a href="https://github.com/Lacrimosica" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
           <a href="https://www.linkedin.com/in/51226189" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
@@ -569,6 +584,7 @@
     <script type="module" src="/js/lab.js"></script>
     <script type="module" src="/js/rotator.js"></script>
     <script type="module" src="/js/manifesto-path.js"></script>
+    <script type="module" src="/js/nav-progress.js"></script>
     <script type="module" src="/js/icebreaker.js"></script>
   </body>
 </html>
