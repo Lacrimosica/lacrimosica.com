@@ -4,7 +4,7 @@ A small, static personal website for Mômô Goudarzi.
 
 ## Local preview
 
-Open `index.html` in a browser, or run a local static server:
+Run a local static server (the script is an ES module, so opening `index.html` from disk does not work):
 
 ```sh
 python3 -m http.server 8000
@@ -20,4 +20,12 @@ Then visit `http://localhost:8000`.
 4. After the first deployment, add `lacrimosica.com` under **Custom domains** in the Pages project.
 5. Follow Cloudflare's DNS prompts and optionally add `www.lacrimosica.com` as a redirect.
 
-The site is plain HTML and CSS; no build step or dependencies are required.
+The site is plain HTML, CSS and ES modules; no build step or dependencies are required.
+
+## Tests
+
+The hero's logic lives in `js/` as plain modules with tests in `tests/`:
+
+```sh
+node --test
+```

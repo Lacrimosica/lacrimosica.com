@@ -6,16 +6,16 @@
     <meta name="theme-color" content="#f5f4ee">
     <meta
       name="description"
-      content="Mômô Goudarzi works across backend and cloud engineering and nonprofit operations in Turin, Italy."
+      content="Backend and cloud engineer in Turin, Italy, with about three years on production systems and LLM features. I have also helped run a volunteer nonprofit since 2022."
     >
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Mômô Goudarzi — Technology & Community">
+    <meta property="og:title" content="Mômô Goudarzi — Software Engineer &amp; Nonprofit Operations">
     <meta
       property="og:description"
-      content="I build systems with code and with people: backend and cloud software, nonprofit operations, and stronger communities."
+      content="Backend &amp; cloud engineer: distributed systems, Kubernetes, production RAG and agents. Volunteer operations at a Turin nonprofit since 2022."
     >
     <meta property="og:url" content="https://lacrimosica.com/">
-    <title>Mômô Goudarzi — Technology & Community</title>
+    <title>Mômô Goudarzi — Software Engineer &amp; Nonprofit Operations</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="stylesheet" href="/styles.css">
   </head>
@@ -23,113 +23,534 @@
     <header class="site-header">
       <a class="wordmark" href="#top" aria-label="Mômô Goudarzi, home">mg<span>.</span></a>
       <nav aria-label="Main navigation">
-        <a href="#about">Two sides</a>
+        <a href="#intro">Two sides</a>
         <a href="#work">Projects</a>
+        <a class="nav-optional" href="#experience">Experience</a>
+        <a href="#story">About</a>
         <a class="nav-contact" href="mailto:m.gdrzi77@gmail.com">Say hello <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero" aria-labelledby="intro-title">
-        <p class="eyebrow"><span class="status-dot"></span> Technology · Community · Operations</p>
-        <h1 id="intro-title">Hi, I’m Mômô.<br>I build systems<br>with <span>code</span> and people.</h1>
-        <div class="hero-bottom">
-          <p class="intro">
-            Backend and cloud engineer, nonprofit volunteer leader, and
-            operations-builder in Turin. I care about the systems people rely on,
-            whether they run on code or collaboration.
-          </p>
-          <a class="text-link" href="#about">The two sides of my work <span aria-hidden="true">↓</span></a>
-        </div>
-        <span class="hero-index" aria-hidden="true">01 / 04</span>
-      </section>
+      <section class="identity-stage" id="intro" aria-labelledby="identity-title">
+        <h1 class="visually-hidden" id="identity-title">
+          Mômô Goudarzi: technology and community operations
+        </h1>
+        <div class="identity-split" data-active="equilibrium" data-stage="equilibrium" data-cursor="phase">
+          <svg class="wave-division" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true">
+            <path class="wave-phase-desktop" d="M535 0 C455 150 605 270 520 430 C435 600 600 760 500 1000 H1000 V0 Z"/>
+            <path class="wave-phase-mobile" d="M0 490 C140 430 285 565 430 500 C610 420 760 565 1000 485 V1000 H0 Z"/>
+            <path class="wave-ripple wave-ripple--desktop" d="M535 0 C455 150 605 270 520 430 C435 600 600 760 500 1000"/>
+            <path class="wave-ripple wave-ripple--mobile" d="M0 490 C140 430 285 565 430 500 C610 420 760 565 1000 485"/>
+          </svg>
+          <button
+            class="identity-panel identity-panel--technology"
+            type="button"
+            data-side="technology"
+            aria-pressed="false"
+          >
+            <span class="identity-kicker">01 / TECHNOLOGY</span>
+            <span class="identity-title">
+              <span class="visually-hidden">I build reliability, clarity and resilience into technologies.</span>
+              <span aria-hidden="true">I build <span class="identity-concept-rotator" data-suffix="" data-subjects="reliability|clarity|resilience">reliability</span><br>into technologies.</span>
+            </span>
+            <span class="identity-summary">I build dependable systems, from backend foundations to practical AI features.</span>
+            <span class="identity-reveal">
+              <span class="reveal-copy">I built the backend and cloud for an AI agent platform. The work included retrieval, tools for agents, session handling, and background workflows between services.</span>
+            </span>
+            <span class="identity-hint">Hover, focus or tap to see more <span aria-hidden="true">↘</span></span>
+          </button>
 
-      <section class="about section" id="about" aria-labelledby="about-title">
-        <div class="section-heading">
-          <p class="eyebrow">Two sides of my work</p>
-          <h2 id="about-title">Different systems.<br>Same instinct.</h2>
-        </div>
-        <div class="identity-grid">
-          <article class="identity-card">
-            <p class="eyebrow">01 / Technology</p>
-            <h3>Software that holds up in the real world.</h3>
-            <p>
-              I spent 2.5 years at Glue Labs owning backend and cloud systems
-              across production products and client projects—from distributed
-              services to AI features.
-            </p>
-            <div class="identity-result">
-              <strong>~90%</strong>
-              <span>less query execution time after resolving an upstream data-integrity issue</span>
-            </div>
-            <p class="identity-detail">
-              Now studying Cybersecurity Engineering at Politecnico di Torino.
-              <span class="tool-list">TypeScript · NestJS · Python · Google Cloud · Kubernetes</span>
-            </p>
-          </article>
-          <article class="identity-card community-card">
-            <p class="eyebrow">02 / People &amp; operations</p>
-            <h3>Good systems are made with people, too.</h3>
-            <p>
-              At Dialogue, Explore, Bond ODV in Turin, I’ve helped build the
-              volunteer operations behind a community: onboarding, training,
-              shared tools, and paths for people to grow.
-            </p>
-            <div class="identity-result">
-              <strong>~5 → ~30</strong>
-              <span>volunteers actively using shared tools over 12 months</span>
-            </div>
-            <p class="identity-detail">
-              Helped establish the HR area and supported a community of around
-              50 volunteers, members, and board representatives.
-            </p>
-          </article>
+          <button
+            class="identity-panel identity-panel--community"
+            type="button"
+            data-side="community"
+            aria-pressed="false"
+          >
+            <span class="identity-kicker">02 / PEOPLE &amp; OPERATIONS</span>
+            <span class="identity-title">
+              <span class="visually-hidden">I build belonging, agency and shared purpose into communities.</span>
+              <span aria-hidden="true">I build <span class="identity-concept-rotator identity-concept-rotator--people" data-suffix="" data-subjects="belonging|agency|shared purpose">belonging</span><br>into communities.</span>
+            </span>
+            <span class="identity-summary">I make it easier for people to find support, contribute, and take responsibility.</span>
+            <span class="identity-reveal">
+              <span class="reveal-copy">At a free peer-support nonprofit, I set up the internal tools and built a referral network with other local organizations.</span>
+            </span>
+            <span class="identity-hint">Hover, focus or tap to see more <span aria-hidden="true">↙</span></span>
+          </button>
+
+          <p class="visually-hidden" id="equilibrium-announce" aria-live="polite"></p>
         </div>
       </section>
 
       <section class="work section" id="work" aria-labelledby="work-title">
         <div class="section-heading">
           <p class="eyebrow">Selected projects</p>
-          <h2 id="work-title">Tools for real life,<br>built a little at a time.</h2>
+          <h2 id="work-title">Things I build<br>and use myself.</h2>
         </div>
         <div class="project-list">
-          <a class="project" href="https://github.com/Lacrimosica/niki" target="_blank" rel="noreferrer">
+          <article class="project">
             <span class="project-number">01</span>
-            <span class="project-main">
-              <span class="project-title">Niki</span>
-              <span class="project-description">A management platform built around the needs of Italian nonprofit organizations.</span>
-            </span>
-            <span class="project-stack">TypeScript · Community</span>
+            <div class="project-main">
+              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/niki" target="_blank" rel="noreferrer">Niki</a></h3>
+              <p class="project-description">A multi-tenant platform for the administration of Italian nonprofits. It manages members, volunteers, board terms, assemblies and Third Sector compliance.</p>
+              <a class="project-extra" href="https://niki-demo.lacrimosica.com" target="_blank" rel="noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+            </div>
+            <span class="project-stack">React · Hono · Workers · D1</span>
             <span class="project-arrow" aria-hidden="true">↗</span>
-          </a>
-          <a class="project" href="https://github.com/Lacrimosica/emo" target="_blank" rel="noreferrer">
+          </article>
+          <article class="project">
             <span class="project-number">02</span>
-            <span class="project-main">
-              <span class="project-title">emo</span>
-              <span class="project-description">A personal task manager that uses AI to help make a day feel more manageable.</span>
-            </span>
-            <span class="project-stack">Swift · AI</span>
+            <div class="project-main">
+              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/dossier" target="_blank" rel="noreferrer">Dossier</a> <span class="project-tag">My fork</span></h3>
+              <p class="project-description">My fork of an open-source, self-hosted resume builder. I added a refine chat that tailors one application, a flow that sends new facts back to the profile, visual theme settings and server backups. I built it with AI coding tools.</p>
+              <a class="project-extra" href="https://github.com/AienTech/dossier" target="_blank" rel="noreferrer">Original project <span aria-hidden="true">↗</span></a>
+            </div>
+            <span class="project-stack">Next.js · PostgreSQL · MCP · Ollama</span>
             <span class="project-arrow" aria-hidden="true">↗</span>
-          </a>
-          <a class="project" href="https://github.com/Lacrimosica/lexicon" target="_blank" rel="noreferrer">
+          </article>
+          <article class="project">
             <span class="project-number">03</span>
-            <span class="project-main">
-              <span class="project-title">lexicon</span>
-              <span class="project-description">A language-learning app for looking up words with local, instant translations.</span>
-            </span>
-            <span class="project-stack">TypeScript · Ollama</span>
+            <div class="project-main">
+              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/emo" target="_blank" rel="noreferrer">emo</a></h3>
+              <p class="project-description">A native planner for Mac, iPhone and iPad. It puts your tasks around your fixed commitments. Each day, you record your energy level, and the planner sets the tasks to match it.</p>
+            </div>
+            <span class="project-stack">SwiftUI · SwiftData · Foundation Models</span>
             <span class="project-arrow" aria-hidden="true">↗</span>
-          </a>
+          </article>
+          <article class="project">
+            <span class="project-number">04</span>
+            <div class="project-main">
+              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/lexicon" target="_blank" rel="noreferrer">lexicon</a></h3>
+              <p class="project-description">A tool to learn languages. Paste a text, and a local LLM adds information to the words that you do not know. Then review these words with spaced repetition.</p>
+            </div>
+            <span class="project-stack">React · Dexie · Ollama</span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="project">
+            <span class="project-number">05</span>
+            <div class="project-main">
+              <h3 class="project-title"><a class="project-link" href="https://github.com/Lacrimosica/social-media-domains-reference-list" target="_blank" rel="noreferrer">Social media blocklist</a></h3>
+              <p class="project-description">A list of social media and messaging domains in hosts format, for Pi-hole and other DNS filters. Use it to block social media on a network.</p>
+            </div>
+            <span class="project-stack">Shell · Pi-hole</span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </article>
         </div>
         <a class="all-work text-link" href="https://github.com/Lacrimosica?tab=repositories" target="_blank" rel="noreferrer">
           More projects on GitHub <span aria-hidden="true">↗</span>
         </a>
       </section>
 
-      <section class="contact section" id="contact" aria-labelledby="contact-title">
-        <p class="eyebrow">Technology, people, or both?</p>
-        <h2 id="contact-title">Let’s make<br><span>something work.</span></h2>
-        <a class="contact-link" href="mailto:m.gdrzi77@gmail.com">m.gdrzi77@gmail.com <span aria-hidden="true">↗</span></a>
+      <section class="experience section" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">Backend work<br>and nonprofit work.</h2>
+        </div>
+
+        <div class="experience-columns">
+          <div class="experience-column experience-column--technology">
+            <h3 class="experience-kicker">01 / Software &amp; teaching</h3>
+            <ol class="experience-list">
+              <li class="experience-item">
+                <div class="experience-head">
+                  <h4 class="experience-role">Software Engineer, Backend &amp; Cloud</h4>
+                  <span class="experience-meta">Glue Labs · 2023 – 2025</span>
+                </div>
+                <p>I owned the backend and cloud of two in-house products: <a class="text-link-inline" href="https://pupau.ai" target="_blank" rel="noreferrer">Pupau</a>, an AI agent platform, and Baghera, an HR platform. I was also the only backend engineer on 5+ client projects, and on call.</p>
+                <ul class="experience-points">
+                  <li>Made a critical query ~90% faster by tracing it to a data bug upstream.</li>
+                  <li>Led the split of a monolith into microservices on Kubernetes.</li>
+                  <li>Added Keycloak SSO to Apache Superset without forking it.</li>
+                  <li>Client integrations: PDND for PNRR projects, payments, chatbots, e-commerce and warehouse APIs. One public example is <a class="text-link-inline" href="https://easy-plan.app/" target="_blank" rel="noreferrer">Easy Plan</a>.</li>
+                  <li>Taught a backend course to 20+ developers and mentored an intern.</li>
+                </ul>
+                <p class="experience-stack">TypeScript · NestJS · Java · Python · GCP · Kubernetes · PostgreSQL · Kafka</p>
+              </li>
+              <li class="experience-item">
+                <div class="experience-head">
+                  <h4 class="experience-role">Software Engineer</h4>
+                  <span class="experience-meta">Orbyta Technologies · 2022 – 2023</span>
+                </div>
+                <p>I built REST APIs and microservices on Microsoft Azure for public transport clients. I led dependency security audits with Snyk on 4+ production codebases (Java dependency trees and Docker base images). The client teams adopted my prioritized remediation reports.</p>
+                <p class="experience-stack">Java · Spring Boot · Angular · Azure · PostgreSQL</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="experience-column experience-column--community">
+            <h3 class="experience-kicker">02 / People &amp; operations</h3>
+            <ol class="experience-list">
+              <li class="experience-item">
+                <div class="experience-head">
+                  <h4 class="experience-role">Vice President &amp; Secretary</h4>
+                  <span class="experience-meta">Dialogue Explore Bond · 2024 – 2025</span>
+                </div>
+                <p>I was the contact person for ~50 volunteers, members and board members. I helped create the volunteer HR area, which did not exist before: intake interviews, training, recognition and growth paths with one-to-one follow-up. Volunteers moving into board roles went from ~2 to ~6 a year. I built a referral network with 7 Turin Third Sector organizations, including Arci and ACMOS, and it is still active.</p>
+              </li>
+              <li class="experience-item">
+                <div class="experience-head">
+                  <h4 class="experience-role">IT &amp; Systems Coordinator</h4>
+                  <span class="experience-meta">Dialogue Explore Bond · 2023 – 2024</span>
+                </div>
+                <p>I set up the workspace, knowledge base and documentation, and managed accounts for ~50 users with documented onboarding and offboarding. I met the non-technical volunteers one by one, and active use of the tools went from ~5 to ~30 volunteers in 12 months. I also ran a full GDPR and Third Sector compliance review and handed it to my successor.</p>
+              </li>
+              <li class="experience-item">
+                <div class="experience-head">
+                  <h4 class="experience-role">Treasurer</h4>
+                  <span class="experience-meta">Dialogue Explore Bond · 2022 – 2023</span>
+                </div>
+                <p>I managed the ~€7,500 annual budget and built a treasury team, which did not exist before, then trained the volunteers who took it over. With the board, I co-wrote the yearly funding applications to Politecnico di Torino (up to ~€10,000) and kept audit-ready records for the funds.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <dl class="experience-education">
+          <div>
+            <dt>MSc Cybersecurity Engineering</dt>
+            <dd>Politecnico di Torino · 2026 – now</dd>
+          </div>
+          <div>
+            <dt>BSc Computer Engineering</dt>
+            <dd>Politecnico di Torino · 2019 – 2023 · 97/110</dd>
+          </div>
+          <div>
+            <dt>Languages</dt>
+            <dd>Persian (native) · English (C2) · Italian (C2) · French (A2)</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="story-section section" id="story" aria-labelledby="story-title">
+        <div class="story-copy">
+          <p class="eyebrow">Why I build</p>
+          <h2 id="story-title" aria-label="It was never about the technology. It's about who it works for.">
+            <span aria-hidden="true">It was never about</span><br>
+            <span class="story-rotator" aria-hidden="true" data-subjects="AI|the power loom|the assembly line|the printing press|the internet|the smartphone|the algorithm|the app">AI.</span><br>
+            <span aria-hidden="true">It's about who it works for.</span>
+          </h2>
+          <p>
+            I grew up inside systems that had already failed the people in
+            them. So I don't get excited about new tools. I ask <strong>who
+            they're for, who gets left out, and who pays.</strong>
+          </p>
+          <p>
+            New things land on a world that's already there. Where work
+            <strong>burns people out</strong>, it burns them out faster. Where
+            a few already <strong>hold the opportunities</strong>, they keep
+            more of them. Where <strong>care is left to unpaid people</strong>,
+            they carry more of it.
+          </p>
+          <p>
+            I studied chemistry before computer engineering, and Le Châtelier's
+            principle still shapes how I think. Disturb a system and it pushes
+            back to the same balance. Speed it up and it just gets there faster.
+            The only way to a different balance is to change the conditions it
+            lives in. That's the work: not absorbing whatever happens to us, but
+            changing what happens next, together.
+            <a class="text-link-inline" href="#le-chatelier">See it in practice ↓</a>
+          </p>
+          <p class="story-signoff">
+            Software engineer · Nonprofit operations · Mental health advocate<br>
+            Turin, Italy
+          </p>
+        </div>
+        <figure class="story-portrait">
+          <div class="portrait-media">
+            <img src="/assets/momo.jpg" alt="Mômô Goudarzi" width="1152" height="768">
+          </div>
+          <figcaption>Mômô Goudarzi</figcaption>
+        </figure>
+      </section>
+
+      <section class="lab section" id="le-chatelier" data-cursor="ink" aria-labelledby="lab-title">
+        <div class="lab-heading">
+          <div class="lab-intro">
+            <p class="eyebrow">Le Châtelier in practice</p>
+            <h2 id="lab-title">Every <span>system</span><br>pushes back.</h2>
+            <p class="lab-lead">
+              In chemistry, a system at equilibrium pushes back against anything
+              you do to it. Add more, take some away, squeeze it: under the same
+              conditions it returns to the same balance, the equilibrium constant.
+              A catalyst only gets it there faster. Only a change in the conditions,
+              like the temperature of a reaction, moves the balance itself. Pick a
+              disturbance and watch both happen.
+            </p>
+          </div>
+          <div class="lab-picks" role="group" aria-label="Disturbances">
+            <button class="lab-pick" type="button" data-id="ai" data-travel="0" aria-controls="lab-ai">
+              <span class="lab-pick-kicker">Software &amp; AI</span>
+              <span class="lab-pick-title">An AI assistant goes live</span>
+            </button>
+            <button class="lab-pick" type="button" data-id="security" data-travel="200" aria-controls="lab-security">
+              <span class="lab-pick-kicker">Cybersecurity</span>
+              <span class="lab-pick-title">A security incident</span>
+            </button>
+            <button class="lab-pick" type="button" data-id="bando" data-travel="270" aria-controls="lab-bando">
+              <span class="lab-pick-kicker">Social project design</span>
+              <span class="lab-pick-title">A grant call opens</span>
+            </button>
+            <button class="lab-pick" type="button" data-id="conflict" data-travel="135" aria-controls="lab-conflict">
+              <span class="lab-pick-kicker">People</span>
+              <span class="lab-pick-title">Two people stop working together</span>
+            </button>
+            <button class="lab-pick" type="button" data-id="tools" data-travel="45" aria-controls="lab-tools">
+              <span class="lab-pick-kicker">Digital tools</span>
+              <span class="lab-pick-title">The group moves to one platform</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="lab-body">
+          <div class="lab-view">
+            <div class="lab-scope">
+              <div class="lab-toolbar">
+                <button class="lab-slow" type="button">
+                  <span class="lab-slow-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>
+                  </span>
+                  Slow motion
+                </button>
+                <div class="lab-zoom" role="group" aria-label="Zoom">
+                  <button type="button" data-zoom="-1" aria-label="Zoom out">−</button>
+                  <span class="lab-zoom-level">1×</span>
+                  <button type="button" data-zoom="1" aria-label="Zoom in">+</button>
+                  <span class="lab-zoom-hint" aria-hidden="true">or click the lens</span>
+                </div>
+              </div>
+              <canvas aria-hidden="true"></canvas>
+              <svg class="lab-ring" viewBox="-8 -8 216 216" aria-hidden="true"></svg>
+              <div class="lab-gauge">
+                <span class="lab-gauge-label">Conditions</span>
+                <span class="lab-gauge-track" aria-hidden="true"><i class="lab-gauge-marker"></i></span>
+                <span class="lab-gauge-ends" aria-hidden="true"><span>Old</span><span>New</span></span>
+                <span class="lab-gauge-condition"></span>
+              </div>
+            </div>
+            <div class="lab-readout">
+              <div class="lab-live">
+                <p class="lab-caption-step">At equilibrium</p>
+                <p class="lab-caption-text">Atoms turn into each other at the same rate both ways, so the amounts stay level. That balance is set by the conditions. Pick a disturbance.</p>
+              </div>
+              <div class="lab-guide" hidden aria-live="polite">
+                <p class="lab-guide-step"></p>
+                <div class="lab-guide-block">
+                  <h3>Under the lens</h3>
+                  <p class="lab-guide-science"></p>
+                </div>
+                <div class="lab-guide-block lab-guide-practice">
+                  <h3>In practice</h3>
+                  <div class="lab-guide-body"></div>
+                </div>
+              </div>
+              <figure class="lab-chart" aria-hidden="true">
+                <figcaption>Amount in the system, over time</figcaption>
+                <canvas></canvas>
+                <ul class="lab-legend"></ul>
+              </figure>
+              <ul class="lab-chips" aria-hidden="true"></ul>
+              <div class="lab-controls">
+                <div class="lab-guide-nav" hidden>
+                  <button class="lab-back" type="button">⏪ Rewind a stage</button>
+                  <button class="lab-next" type="button">Next stage →</button>
+                  <button class="lab-exit" type="button">Exit slow motion</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lab-panels">
+          <article class="lab-panel" id="lab-ai" data-id="ai">
+            <div class="lab-col" data-step="disturbance">
+              <h3><span>01</span> Disturbance</h3>
+              <p>A product team ships an AI assistant that answers customers’ questions from the company’s own documents.</p>
+            </div>
+            <div class="lab-col lab-push" data-step="counter">
+              <h3><span>02</span> How the system pushes back</h3>
+              <ul>
+                <li>Stale docs, served fast</li>
+                <li>Confident wrong answers</li>
+                <li>Nobody owns the sources</li>
+                <li>Side tools nobody approved</li>
+              </ul>
+            </div>
+            <div class="lab-col lab-fix" data-step="settled">
+              <h3><span>03</span> What I change</h3>
+              <ul>
+                <li data-short="Sources cleaned and dated">Clean and date the sources before they are indexed.</li>
+                <li data-short="Every source has an owner">Give every source an owner who keeps it current.</li>
+                <li data-short="Test on real questions">Test it on the questions people really ask, not on demos.</li>
+                <li data-short="A person makes the call">Keep a person on every decision that matters.</li>
+              </ul>
+            </div>
+            <p class="lab-principle">AI is a catalyst: it gets a team to the balance it already had, only faster. Change the balance first.</p>
+          </article>
+
+          <article class="lab-panel" id="lab-security" data-id="security">
+            <div class="lab-col" data-step="disturbance">
+              <h3><span>01</span> Disturbance</h3>
+              <p>A critical vulnerability lands in a dependency, or a credential leaks.</p>
+            </div>
+            <div class="lab-col lab-push" data-step="counter">
+              <h3><span>02</span> How the system pushes back</h3>
+              <ul>
+                <li>Panic patching</li>
+                <li>Blame</li>
+                <li>Everyone locked out</li>
+                <li>Alerts nobody reads</li>
+              </ul>
+            </div>
+            <div class="lab-col lab-fix" data-step="settled">
+              <h3><span>03</span> What I change</h3>
+              <ul>
+                <li data-short="Secrets out of the code">Keep secrets out of the code, so a leak takes minutes to rotate.</li>
+                <li data-short="Patch by real exposure">Patch by real exposure, not by the severity score alone.</li>
+                <li data-short="Reporting without blame">Write a blameless post-mortem, so people report early next time.</li>
+                <li data-short="Safe path is the easy path">Make the safe path the easy one: SSO and least privilege.</li>
+              </ul>
+            </div>
+            <p class="lab-principle">Locking everything down after a leak is push-back. Making the safe path the easy one is a new condition.</p>
+          </article>
+
+          <article class="lab-panel" id="lab-bando" data-id="bando">
+            <div class="lab-col" data-step="disturbance">
+              <h3><span>01</span> Disturbance</h3>
+              <p>A foundation opens a grant call with a short deadline.</p>
+            </div>
+            <div class="lab-col lab-push" data-step="counter">
+              <h3><span>02</span> How the system pushes back</h3>
+              <ul>
+                <li>Project bent to fit the money</li>
+                <li>Partners on paper only</li>
+                <li>Budget doesn’t match the work</li>
+                <li>Indicators nobody measures</li>
+              </ul>
+            </div>
+            <div class="lab-col lab-fix" data-step="settled">
+              <h3><span>03</span> What I change</h3>
+              <ul>
+                <li data-short="Start from the need">Start from the needs analysis, then check whether the call fits.</li>
+                <li data-short="Every goal has a task">Tie each goal to a real task and a person who owns it.</li>
+                <li data-short="Partners with a real role">Bring in partners with a real role and a line in the budget.</li>
+                <li data-short="Ask the people">Ask the people it was for whether it helped.</li>
+              </ul>
+            </div>
+            <p class="lab-principle">Bending the project to fit the call is push-back. Starting from the need changes the conditions.</p>
+          </article>
+
+          <article class="lab-panel" id="lab-conflict" data-id="conflict">
+            <div class="lab-col" data-step="disturbance">
+              <h3><span>01</span> Disturbance</h3>
+              <p>Two people in a group clash over how something should be done, and the work stalls.</p>
+            </div>
+            <div class="lab-col lab-push" data-step="counter">
+              <h3><span>02</span> How the system pushes back</h3>
+              <ul>
+                <li>Sides form</li>
+                <li>People go quiet</li>
+                <li>Gossip instead of feedback</li>
+                <li>Someone leaves</li>
+              </ul>
+            </div>
+            <div class="lab-col lab-fix" data-step="settled">
+              <h3><span>03</span> What I change</h3>
+              <ul>
+                <li data-short="Find who owns the problem">Find out who owns the problem before anyone tries to fix it.</li>
+                <li data-short="Listen before answering">Listen actively, and say back what I heard before I answer.</li>
+                <li data-short="Speak in I-messages">Speak in I-messages: what I see, how it affects me, what I need.</li>
+                <li data-short="Solutions both can accept">Look for a solution both people accept (Gordon’s no-lose method), then agree on a check-in.</li>
+              </ul>
+            </div>
+            <p class="lab-principle">Taking sides is push-back. A shared way to resolve conflict, that everyone knows, is a new condition.</p>
+          </article>
+
+          <article class="lab-panel" id="lab-tools" data-id="tools">
+            <div class="lab-col" data-step="disturbance">
+              <h3><span>01</span> Disturbance</h3>
+              <p>A volunteer group moves its chats, files and sign-ups into one shared platform.</p>
+            </div>
+            <div class="lab-col lab-push" data-step="counter">
+              <h3><span>02</span> How the system pushes back</h3>
+              <ul>
+                <li>WhatsApp is still the real channel</li>
+                <li>“I’m not technical”</li>
+                <li>Two places for everything</li>
+                <li>Only ~5 people use it</li>
+              </ul>
+            </div>
+            <div class="lab-col lab-fix" data-step="settled">
+              <h3><span>03</span> What I changed</h3>
+              <ul>
+                <li data-short="Every flow written down">Document every flow, including onboarding and offboarding.</li>
+                <li data-short="One place per kind of info">Keep one place for each kind of information.</li>
+                <li data-short="It stuck">A year later, the platform is still the one place people look.</li>
+              </ul>
+            </div>
+            <p class="lab-principle">A new tool on old habits settles back into the old habits. Change where the work lives, not just the tool.</p>
+          </article>
+        </div>
+
+
+
+        <p class="lab-mantra">Don’t fight the push-back. <span>Change the conditions.</span></p>
+      </section>
+
+      <section class="manifesto section" id="manifesto" aria-labelledby="manifesto-title">
+        <p class="manifesto-kicker"><span>06</span> Ideas · this page</p>
+        <h2 class="manifesto-title" id="manifesto-title">A new idea arrives.</h2>
+        <ol class="manifesto-path">
+          <li class="milestone">
+            <span class="milestone-node" aria-hidden="true"></span>
+            <h3><span>01</span> Disturbance</h3>
+            <p class="milestone-title">Someone says it could be different</p>
+            <p>Who care is for, who work serves, who gets a say. This page is one of those voices.</p>
+          </li>
+          <li class="milestone milestone--push">
+            <span class="milestone-node" aria-hidden="true"></span>
+            <h3><span>02</span> Push-back</h3>
+            <p class="milestone-title">The system pushes back</p>
+            <ul class="manifesto-leaves">
+              <li>“That’s just how it is”</li>
+              <li>“Nice, but not realistic”</li>
+              <li>It becomes a slogan</li>
+              <li>The people pushing it get tired</li>
+            </ul>
+            <p class="milestone-aside">Left alone, things settle back where they were.</p>
+          </li>
+          <li class="milestone milestone--change">
+            <span class="milestone-node" aria-hidden="true"></span>
+            <h3><span>03</span> What I change</h3>
+            <p class="milestone-title">So I change the conditions</p>
+            <ul class="manifesto-seeds">
+              <li><strong>Make it a habit.</strong> Something people do every week, not just agree with once.</li>
+              <li><strong>Build it in.</strong> Into the rules, the budget, who’s at the table.</li>
+              <li><strong>Don’t carry it alone.</strong> A group survives one person leaving.</li>
+              <li><strong>Pass it on.</strong> So it outlives whoever started it.</li>
+            </ul>
+          </li>
+          <li class="milestone milestone--balance">
+            <span class="milestone-node" aria-hidden="true"></span>
+            <h3><span>04</span> A new balance</h3>
+            <p class="milestone-title">And this time it holds</p>
+            <p class="manifesto-principle">An idea on its own gets pushed back like anything else. It lasts when it changes the conditions: who decides, who gets paid, who’s in the room.</p>
+          </li>
+        </ol>
+        <p class="manifesto-note">In 1978, Italy closed its psychiatric hospitals with the <a href="https://en.wikipedia.org/wiki/Law_180" target="_blank" rel="noreferrer">Basaglia law</a>. It held in Trieste, where Franco Basaglia’s team had spent years building community mental health centres to replace them. Where nobody built those services, the reform stalled. The law was the disturbance. The centres changed the conditions.</p>
+        <p class="manifesto-invite">If this resonates, let’s talk. No project needed, just a conversation :) <a href="#contact">Say hello ↓</a></p>
+      </section>
+
+      <section class="contact section" id="contact" data-cursor="ink" aria-labelledby="contact-title">
+        <p class="eyebrow">Technology, people, or neither</p>
+        <h2 id="contact-title">Say <span class="contact-hello">hello <span class="contact-face">:3</span></span><br><span>No agenda needed.</span></h2>
+        <p class="contact-lead">A project, a question, or just a chat with someone new. Some of my favourite people started as a random message, or a random encounter.</p>
+        <div class="icebreaker">
+          <p class="icebreaker-label">Don’t know how to start? Let’s break the ice.</p>
+          <p class="icebreaker-question" aria-live="polite">How do you squeeze the toothpaste: from the end, or from the middle?</p>
+          <button class="icebreaker-shuffle" type="button" hidden>Surprise me ↻</button>
+        </div>
+        <a class="contact-link" href="mailto:m.gdrzi77@gmail.com?subject=Hello%20from%20your%20website&amp;body=Hi%20M%C3%B4m%C3%B4%2C%0A%0AI%20came%20across%20your%20website%20and%20wanted%20to%20say%20hello.%0A%0AA%20little%20about%20me%3A%20%0A%0AIcebreaker%3A%20How%20do%20you%20squeeze%20the%20toothpaste%3A%20from%20the%20end%2C%20or%20from%20the%20middle%3F%0AMy%20answer%3A%20%0A%0ATalk%20soon%2C%0A">m.gdrzi77@gmail.com <span aria-hidden="true">↗</span></a>
         <div class="social-links">
           <a href="https://github.com/Lacrimosica" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
           <a href="https://www.linkedin.com/in/51226189" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
@@ -142,8 +563,12 @@
       <a href="#top">Back to top ↑</a>
       <span>Made in Turin, Italy</span>
     </footer>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <div class="custom-cursor-dot" aria-hidden="true"></div>
+    <div class="custom-cursor-ring" aria-hidden="true"></div>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/js/lab.js"></script>
+    <script type="module" src="/js/rotator.js"></script>
+    <script type="module" src="/js/manifesto-path.js"></script>
+    <script type="module" src="/js/icebreaker.js"></script>
   </body>
 </html>
