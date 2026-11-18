@@ -3,6 +3,7 @@ import {
   createCycle,
   targetsFor,
 } from "./js/cycle.js";
+import { preserveLanguageScroll } from "/js/language-scroll.js";
 import { createFluidSim } from "./js/fluid-sim.js";
 import { createLiquidLayer } from "./js/liquid-layer.js";
 import { readPalette } from "./js/palette.js";
@@ -10,6 +11,7 @@ import { createParticleLayer } from "./js/particle-layer.js";
 import { createPhaseGeometry } from "./js/phase-geometry.js";
 
 document.getElementById("year").textContent = new Date().getFullYear();
+preserveLanguageScroll();
 
 const split = document.querySelector(".identity-split");
 const panels = Array.from(split.querySelectorAll(".identity-panel"));
